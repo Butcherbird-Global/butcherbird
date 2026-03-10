@@ -39,7 +39,7 @@ export default function HomePage() {
             </p>
           </div>
           <div style={{ display: 'flex', gap: 20, flexWrap: 'wrap' }} className="anim d4">
-            <a className="btn btn-gold" href="CALENDLY_LINK_HERE" target="_blank" rel="noopener noreferrer">Start Scaling Seriously</a>
+            <a className="btn btn-gold" href="https://calendly.com/g-butcherbird/butcherbird-introduction-w-gascoyne" target="_blank" rel="noopener noreferrer">Start Scaling Seriously</a>
             <Link className="btn btn-outline" href="/work">See Our Work</Link>
           </div>
         </div>
@@ -122,7 +122,7 @@ export default function HomePage() {
                   <li>Need weekly check-in calls and sign-off on every decision</li>
                   <li>Want a traditional managed-service agency relationship</li>
                 </ul>
-                <a className="btn btn-gold" href="CALENDLY_LINK_HERE" target="_blank" rel="noopener noreferrer">
+                <a className="btn btn-gold" href="https://calendly.com/g-butcherbird/butcherbird-introduction-w-gascoyne" target="_blank" rel="noopener noreferrer">
                   Book the 20-Minute Call
                 </a>
                 <p className="f-label" style={{ marginTop: 14 }}>Min. active spend: $1,500/month or R15,000/month</p>
@@ -173,8 +173,8 @@ export default function HomePage() {
               <div className="f-gold" style={{ marginBottom: 14 }}>03 — Strategy</div>
               <h3 className="f-h2" style={{ marginBottom: 14 }}>Full Stack Consulting</h3>
               <p className="f-body" style={{ marginBottom: 20 }}>
-                For brands that want more than execution. Monthly sessions with Gascoyne Clarke,
-                quarterly business reviews, and direct access to the thinking — not just the output.
+                For brands that want more than execution. Direct access to the Butcherbird C-suite —
+                monthly strategy sessions, quarterly business reviews, and senior-level thinking applied to your account.
               </p>
               <p className="f-label">Monthly strategy · Quarterly reviews · Growth roadmap</p>
             </div>
@@ -243,7 +243,7 @@ export default function HomePage() {
                 This is not a discount position — it&apos;s an arbitrage position.
               </p>
               <div style={{ marginTop: 36 }} className="reveal-l">
-                <a className="btn btn-gold" href="CALENDLY_LINK_HERE" target="_blank" rel="noopener noreferrer">Book an Intro Call</a>
+                <a className="btn btn-gold" href="https://calendly.com/g-butcherbird/butcherbird-introduction-w-gascoyne" target="_blank" rel="noopener noreferrer">Book an Intro Call</a>
               </div>
             </div>
             <div>
@@ -282,7 +282,7 @@ export default function HomePage() {
             20 minutes. No pitch. We look at your brand, tell you what we see — and if we&apos;re
             the right fit for each other, we get to work.
           </p>
-          <a className="btn btn-gold reveal" href="CALENDLY_LINK_HERE" target="_blank" rel="noopener noreferrer">
+          <a className="btn btn-gold reveal" href="https://calendly.com/g-butcherbird/butcherbird-introduction-w-gascoyne" target="_blank" rel="noopener noreferrer">
             Book Your Intro Call
           </a>
           <p className="f-label reveal" style={{ marginTop: 18 }}>butcherbird.global · Cape Town · hello@butcherbird.global</p>

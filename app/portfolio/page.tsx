@@ -149,7 +149,7 @@ export default function PortfolioPage() {
         <div className="container">
           <div className="footer-inner">
             <p className="f-label">butcherbird.global · Cape Town · 2026</p>
-            <a className="btn btn-gold" href="CALENDLY_LINK_HERE" target="_blank" rel="noopener noreferrer">Book an Intro Call</a>
+            <a className="btn btn-gold" href="https://calendly.com/g-butcherbird/butcherbird-introduction-w-gascoyne" target="_blank" rel="noopener noreferrer">Book an Intro Call</a>
           </div>
         </div>
       </footer>

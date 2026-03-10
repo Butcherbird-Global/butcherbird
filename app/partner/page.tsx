@@ -60,7 +60,7 @@ export default function PartnerPage() {
                 label: 'Entrepreneurs',
                 title: 'Capital + execution for brands ready to scale',
                 body: "You have a product that works and a market that wants it. You need capital and a team that knows how to deploy it. Butcherbird brings both — equity partnership structures where we invest our infrastructure and expertise in exchange for a meaningful stake in the outcome.",
-                tags: "Media buying · Email system · Creative · Distribution strategy · Gascoyne's involvement",
+                tags: "Media buying · Email system · Creative · Distribution strategy · C-suite involvement",
               },
               {
                 num: '03',
@@ -178,7 +178,7 @@ export default function PartnerPage() {
         <div className="container">
           <div className="footer-inner">
             <p className="f-label">butcherbird.global · Cape Town · 2026</p>
-            <a className="btn btn-gold" href="CALENDLY_LINK_HERE" target="_blank" rel="noopener noreferrer">Book an Intro Call</a>
+            <a className="btn btn-gold" href="https://calendly.com/g-butcherbird/butcherbird-introduction-w-gascoyne" target="_blank" rel="noopener noreferrer">Book an Intro Call</a>
           </div>
         </div>
       </footer>

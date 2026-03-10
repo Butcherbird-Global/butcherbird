@@ -44,7 +44,7 @@ export default function Nav() {
             </Link>
           </li>
           <li>
-            <a href="CALENDLY_LINK_HERE" className="nav-cta" target="_blank" rel="noopener noreferrer" onClick={closeMenu}>
+            <a href="https://calendly.com/g-butcherbird/butcherbird-introduction-w-gascoyne" className="nav-cta" target="_blank" rel="noopener noreferrer" onClick={closeMenu}>
               Book a Call
             </a>
           </li>
