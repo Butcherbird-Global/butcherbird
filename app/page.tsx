@@ -75,7 +75,7 @@ export default function HomePage() {
       <RevealOnScroll />
 
       {/* HERO */}
-      <section className="hero">
+      <section className="hero" id="hero">
         <div className="container">
           <div style={{ display: 'flex', alignItems: 'center', gap: 14, marginBottom: 26 }} className="anim d1">
             <div style={{ width: 28, height: 1, background: 'var(--gold)' }} />
@@ -196,7 +196,7 @@ export default function HomePage() {
       </section>
 
       {/* WHAT WE DO */}
-      <section className="section">
+      <section className="section" id="what-we-do">
         <div className="container">
           <div className="gold-rule reveal" />
           <h2 className="f-h1 reveal" style={{ marginBottom: 64 }}>What We Do</h2>
@@ -239,7 +239,7 @@ export default function HomePage() {
       </section>
 
       {/* CLIENT STORIES & WORK */}
-      <section className="section" style={{ background: '#fff' }}>
+      <section className="section" style={{ background: '#fff' }} id="client-stories">
         <div className="container">
           <div className="gold-rule reveal" />
           <h2 className="f-h1 reveal" style={{ marginBottom: 12, color: 'var(--black)' }}>Client Stories<br />& Work</h2>
@@ -283,7 +283,7 @@ export default function HomePage() {
       </section>
 
       {/* TEAM */}
-      <section className="section" style={{ background: '#fff' }}>
+      <section className="section" style={{ background: '#fff' }} id="team">
         <div className="container">
           <div className="gold-rule reveal" />
           <h2 className="f-h1 reveal" style={{ marginBottom: 64, color: 'var(--black)' }}>The Team</h2>
