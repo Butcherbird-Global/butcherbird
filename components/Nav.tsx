@@ -35,7 +35,7 @@ export default function Nav() {
             </Link>
           </li>
           <li>
-            <Link href="/#contact" data-p="contact" onClick={closeMenu}>
+            <Link href="/#contact-form" data-p="contact" onClick={closeMenu}>
               Contact
             </Link>
           </li>

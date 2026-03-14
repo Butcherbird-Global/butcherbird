@@ -55,7 +55,7 @@ export default function HomePage() {
     e.preventDefault()
     const subject = encodeURIComponent(`Enquiry from ${cName}${cBrand ? ` — ${cBrand}` : ''}`)
     const body = encodeURIComponent(`Name: ${cName}\nBrand: ${cBrand}\nEmail: ${cEmail}\n\n${cMessage}`)
-    window.location.href = `mailto:hello@butcherbird.global?subject=${subject}&body=${body}`
+    window.location.href = `mailto:g@butcherbird.global?subject=${subject}&body=${body}`
   }
 
   useEffect(() => {
@@ -152,6 +152,9 @@ export default function HomePage() {
           <div className="testi-scrollbar">
             <div className="testi-scrollbar-fill" style={{ width: `${testiProgress * 100}%` }} />
           </div>
+          <div style={{ marginTop: 48 }} className="reveal">
+            <a className="btn btn-gold" href="https://calendly.com/g-butcherbird/butcherbird-introduction-w-gascoyne" target="_blank" rel="noopener noreferrer">Book a Call</a>
+          </div>
         </div>
       </section>
 
@@ -235,6 +238,9 @@ export default function HomePage() {
               <p className="f-label">Monthly strategy · Quarterly reviews · Growth roadmap</p>
             </div>
           </div>
+          <div style={{ marginTop: 64 }} className="reveal">
+            <a className="btn btn-gold" href="https://calendly.com/g-butcherbird/butcherbird-introduction-w-gascoyne" target="_blank" rel="noopener noreferrer">Book a Call</a>
+          </div>
         </div>
       </section>
 
@@ -279,6 +285,9 @@ export default function HomePage() {
               </div>
             </div>
           ))}
+        </div>
+        <div className="container" style={{ paddingTop: 52 }}>
+          <a className="btn btn-gold reveal" href="https://calendly.com/g-butcherbird/butcherbird-introduction-w-gascoyne" target="_blank" rel="noopener noreferrer">Book a Call</a>
         </div>
       </section>
 
@@ -335,6 +344,9 @@ export default function HomePage() {
                 </div>
               ))}
             </div>
+          </div>
+          <div style={{ marginTop: 64 }} className="reveal">
+            <a className="btn btn-gold" href="https://calendly.com/g-butcherbird/butcherbird-introduction-w-gascoyne" target="_blank" rel="noopener noreferrer">Book a Call</a>
           </div>
         </div>
       </section>
