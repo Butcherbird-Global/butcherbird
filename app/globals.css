@@ -201,6 +201,12 @@ nav {
   user-select: none;
 }
 
+/* VSL */
+.vsl-section { background: var(--dark); padding: 0 0 112px; }
+.vsl-inner { text-align: left; }
+.vsl-ph { width: 100%; max-width: 860px; aspect-ratio: 16/9; background: var(--black); border: 1px solid var(--border); display: flex; flex-direction: column; align-items: center; justify-content: center; position: relative; }
+.vsl-play { width: 64px; height: 64px; border-radius: 50%; border: 1px solid var(--gold); display: flex; align-items: center; justify-content: center; color: var(--gold); padding-left: 4px; }
+
 /* STATS STRIP */
 .stats-strip { padding: 56px 0; background: #fff; border-top: 1px solid rgba(0,0,0,0.08); border-bottom: 1px solid rgba(0,0,0,0.08); }
 .stats-grid { display: grid; grid-template-columns: repeat(5, 1fr); }
