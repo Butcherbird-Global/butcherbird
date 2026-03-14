@@ -152,9 +152,6 @@ export default function HomePage() {
           <div className="testi-scrollbar">
             <div className="testi-scrollbar-fill" style={{ width: `${testiProgress * 100}%` }} />
           </div>
-          <div style={{ marginTop: 48 }} className="reveal">
-            <a className="btn btn-gold" href="https://calendly.com/g-butcherbird/butcherbird-introduction-w-gascoyne" target="_blank" rel="noopener noreferrer">Book a Call</a>
-          </div>
         </div>
       </section>
 
@@ -162,12 +159,15 @@ export default function HomePage() {
       <section className="vsl-section">
         <div className="container">
           <div className="vsl-inner reveal">
-            <h2 className="f-h1" style={{ marginBottom: 48 }}>90 seconds.<br />Hear it from us.</h2>
+            <h2 className="f-h1" style={{ marginBottom: 32 }}>90 seconds. Hear it from us.</h2>
             <div className="vsl-ph">
               <div className="vsl-play">
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><polygon points="5,3 19,12 5,21" /></svg>
               </div>
               <p className="f-label" style={{ marginTop: 20 }}>Video coming soon</p>
+            </div>
+            <div style={{ marginTop: 32 }} className="reveal">
+              <a className="btn btn-gold" href="https://calendly.com/g-butcherbird/butcherbird-introduction-w-gascoyne" target="_blank" rel="noopener noreferrer">Book a Call</a>
             </div>
           </div>
         </div>
