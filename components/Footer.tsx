@@ -51,7 +51,7 @@ export default function Footer() {
           <div className="footer-col">
             <p className="footer-col-hd">Connect</p>
             <ul>
-              <li><a href="mailto:hello@butcherbird.global">hello@butcherbird.global</a></li>
+              <li><a href="mailto:g@butcherbird.global">g@butcherbird.global</a></li>
               <li>
                 <a href="https://www.instagram.com/butcherbirdglobal" target="_blank" rel="noopener noreferrer" className="footer-insta-link">
                   <InstagramIcon /> Instagram

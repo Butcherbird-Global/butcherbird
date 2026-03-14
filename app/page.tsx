@@ -376,7 +376,7 @@ export default function HomePage() {
                 Book a Call
               </a>
               <div className="contact-meta">
-                <p className="f-label">hello@butcherbird.global</p>
+                <p className="f-label">g@butcherbird.global</p>
                 <p className="f-label">Cape Town, South Africa</p>
                 <p className="f-label" style={{ marginTop: 8 }}>Min. active spend: $3,000/mo or R50K/mo</p>
               </div>
