@@ -1,6 +1,6 @@
 export type ModalId =
   | 'buub' | 'schnozz' | 'superior' | 'helpdesk' | 'lakrids' | 'numuti'
-  | 'bonnie' | 'supermushrooms' | 'aromaticapothecary' | 'kokee' | 'shootstudios' | 'hiba'
+  | 'bonnie' | 'kokee' | 'shootstudios' | 'hiba'
 
 export interface CaseStudy {
   id: ModalId
@@ -124,32 +124,6 @@ export const caseStudies: CaseStudy[] = [
     category: 'client',
     subtitle: 'Coming soon — details to follow',
     image: '/BONNIE Case Study Cover.png',
-    desc: 'Full case study coming soon.',
-    metrics: [
-      { val: '—', lbl: 'Details coming' },
-      { val: '—', lbl: 'Details coming' },
-    ],
-    story: 'Full case study details coming soon.',
-  },
-  {
-    id: 'supermushrooms',
-    brand: 'SUPER MUSHROOMS',
-    tag: 'Health & Wellness · DTC · Client',
-    category: 'client',
-    subtitle: 'Coming soon — details to follow',
-    desc: 'Full case study coming soon.',
-    metrics: [
-      { val: '—', lbl: 'Details coming' },
-      { val: '—', lbl: 'Details coming' },
-    ],
-    story: 'Full case study details coming soon.',
-  },
-  {
-    id: 'aromaticapothecary',
-    brand: 'AROMATIC APOTHECARY',
-    tag: 'Beauty & Wellness · DTC · Client',
-    category: 'client',
-    subtitle: 'Coming soon — details to follow',
     desc: 'Full case study coming soon.',
     metrics: [
       { val: '—', lbl: 'Details coming' },

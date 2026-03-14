@@ -224,17 +224,12 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* PROOF OF WORK */}
-      <section className="section" style={{ background: 'var(--dark)' }}>
+      {/* CLIENT STORIES & WORK */}
+      <section className="section" style={{ background: '#fff' }}>
         <div className="container">
-          <div className="sec-label">
-            <span className="sec-label-txt">Proof of work</span>
-            <div className="sec-label-line" />
-          </div>
-          <div style={{ marginBottom: 52 }}>
-            <h2 className="f-h1 reveal" style={{ marginBottom: 12 }}>Built from zero.<br />Documented in detail.</h2>
-            <p className="f-body reveal" style={{ maxWidth: 420 }}>Every number is real. Click any brand to see the full story.</p>
-          </div>
+          <div className="gold-rule reveal" />
+          <h2 className="f-h1 reveal" style={{ marginBottom: 12, color: 'var(--black)' }}>Client Stories<br />& Work</h2>
+          <p className="f-body reveal" style={{ maxWidth: 420, marginBottom: 52, color: 'rgba(0,0,0,0.5)' }}>Every number is real. Click any brand to see the full story.</p>
           <div className="cs-grid">
             {homeStudies.map((s) => (
               <CaseStudyCard
