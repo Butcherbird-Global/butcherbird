@@ -306,15 +306,16 @@ nav {
 @media (max-width: 768px) { .stats2 { grid-template-columns: 1fr; } }
 
 /* TEAM */
-.story-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 72px; align-items: start; }
-.team-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 2px; }
-.team-card { background: var(--dark2); }
-.team-img-ph { width: 100%; aspect-ratio: 3/4; background: var(--dark); display: flex; align-items: center; justify-content: center; position: relative; overflow: hidden; }
-.team-img-lbl { font-weight: 700; font-size: 36px; letter-spacing: .04em; text-transform: uppercase; opacity: .06; }
+.team-grid-mgmt { display: grid; grid-template-columns: repeat(5, 1fr); gap: 2px; }
+.team-grid-staff { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2px; }
+.team-card { background: #f5f3ef; }
+.team-img-ph { width: 100%; aspect-ratio: 3/4; background: var(--black); display: flex; align-items: center; justify-content: center; position: relative; overflow: hidden; }
+.team-img-lbl { font-weight: 700; font-size: 36px; letter-spacing: .04em; text-transform: uppercase; color: var(--off-white); opacity: .08; }
 .team-info { padding: 18px 22px; }
-.team-name { font-weight: 700; font-size: 12px; letter-spacing: .1em; text-transform: uppercase; margin-bottom: 4px; }
-.team-role { font-size: 9px; letter-spacing: .2em; text-transform: uppercase; color: var(--mid); }
-@media (max-width: 768px) { .story-grid { grid-template-columns: 1fr; } }
+.team-name { font-weight: 700; font-size: 11px; letter-spacing: .1em; text-transform: uppercase; margin-bottom: 4px; color: var(--black); }
+.team-role { font-size: 9px; letter-spacing: .2em; text-transform: uppercase; color: var(--gold); }
+@media (max-width: 900px) { .team-grid-mgmt { grid-template-columns: repeat(3, 1fr); } }
+@media (max-width: 768px) { .team-grid-mgmt { grid-template-columns: repeat(2, 1fr); } .team-grid-staff { grid-template-columns: repeat(2, 1fr); } }
 
 /* PORTFOLIO / TIMELINE */
 .port-hero { min-height: 58vh; display: flex; flex-direction: column; justify-content: flex-end; padding: 100px 0 64px; position: relative; overflow: hidden; }

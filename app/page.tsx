@@ -269,53 +269,48 @@ export default function HomePage() {
       </section>
 
       {/* TEAM */}
-      <section className="section" style={{ background: 'var(--dark2)' }}>
+      <section className="section" style={{ background: '#fff' }}>
         <div className="container">
-          <div className="sec-label">
-            <span className="sec-label-txt">The team</span>
-            <div className="sec-label-line" />
-          </div>
-          <div className="story-grid">
-            <div>
-              <div className="gold-rule reveal-l" />
-              <p className="f-gold reveal-l" style={{ marginBottom: 18 }}>Cape Town · 18 people · 7 months</p>
-              <h2 className="f-h1 reveal-l" style={{ marginBottom: 20 }}>Built by operators.<br />Not marketers.</h2>
-              <p className="f-body reveal-l" style={{ marginBottom: 18 }}>
-                We didn&apos;t start as an agency. We started by building our own consumer brands with our own
-                capital — BUUB, Schnozz, Superior Fragrances. The agency exists because the infrastructure
-                we built for ourselves is valuable enough to sell access to.
-              </p>
-              <p className="f-body reveal-l" style={{ marginBottom: 18 }}>
-                When we tell you what works, we&apos;re telling you what we&apos;ve proven with our own money.
-                No other agency in the market can say that.
-              </p>
-              <p className="f-body reveal-l">
-                18 people. Cape Town cost base. Hard-currency international pricing. At ~18:1 ZAR:USD, we
-                deliver world-class execution at a fraction of what any London or New York agency charges.
-                This is not a discount position — it&apos;s an arbitrage position.
-              </p>
-              <div style={{ marginTop: 36 }} className="reveal-l">
-                <a className="btn btn-gold" href="https://calendly.com/g-butcherbird/butcherbird-introduction-w-gascoyne" target="_blank" rel="noopener noreferrer">Book an Intro Call</a>
-              </div>
-            </div>
-            <div>
-              <div className="team-grid reveal">
-                {[
-                  { initials: 'GC', name: 'Gascoyne Clarke', role: 'Founder & CEO · Age 24' },
-                  { initials: 'IT', name: 'Ilan Tait', role: 'COO' },
-                  { initials: 'KM', name: 'Kathleen Murphy', role: 'CMO' },
-                  { initials: 'T', name: 'Tian', role: 'Paid Media Lead' },
-                ].map((member) => (
-                  <div key={member.initials} className="team-card">
-                    <div className="team-img-ph"><div className="team-img-lbl">{member.initials}</div></div>
-                    <div className="team-info">
-                      <div className="team-name">{member.name}</div>
-                      <div className="team-role">{member.role}</div>
-                    </div>
+          <div className="gold-rule reveal" />
+          <h2 className="f-h1 reveal" style={{ marginBottom: 64, color: 'var(--black)' }}>The Team</h2>
+
+          <div className="team-group reveal">
+            <p className="f-gold" style={{ marginBottom: 28, letterSpacing: '0.2em' }}>Management</p>
+            <div className="team-grid-mgmt">
+              {[
+                { initials: 'GC', name: 'Gascoyne Clarke', role: 'CEO' },
+                { initials: 'RC', name: 'Richard Clarke', role: 'CFO' },
+                { initials: 'IT', name: 'Ilan Tait', role: 'Portfolio Manager' },
+                { initials: 'KM', name: 'Kathleen Murphy', role: 'Creative Director' },
+                { initials: 'T', name: 'Tian', role: 'Paid Media Manager' },
+              ].map((member) => (
+                <div key={member.name} className="team-card">
+                  <div className="team-img-ph"><div className="team-img-lbl">{member.initials}</div></div>
+                  <div className="team-info">
+                    <div className="team-name">{member.name}</div>
+                    <div className="team-role">{member.role}</div>
                   </div>
-                ))}
-              </div>
-              <p className="f-label" style={{ marginTop: 14, textAlign: 'center' }}>[Replace with team photography — dark bg, candid, high contrast]</p>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          <div className="team-group reveal" style={{ marginTop: 64 }}>
+            <p className="f-gold" style={{ marginBottom: 28, letterSpacing: '0.2em' }}>Team</p>
+            <div className="team-grid-staff">
+              {[
+                { initials: 'NC', name: 'Nikki Clarke', role: 'Administration & HR' },
+                { initials: 'CT', name: 'Charmaine Trevisan', role: 'Accounts' },
+                { initials: 'CB', name: 'Claudia Barnard', role: 'Graphic Design' },
+              ].map((member) => (
+                <div key={member.name} className="team-card">
+                  <div className="team-img-ph"><div className="team-img-lbl">{member.initials}</div></div>
+                  <div className="team-info">
+                    <div className="team-name">{member.name}</div>
+                    <div className="team-role">{member.role}</div>
+                  </div>
+                </div>
+              ))}
             </div>
           </div>
         </div>
