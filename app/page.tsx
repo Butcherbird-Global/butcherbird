@@ -141,42 +141,55 @@ export default function HomePage() {
       </section>
 
       {/* INTRO CALL */}
-      <section className="section" style={{ background: 'var(--dark2)' }} id="contact">
+      <section className="section" style={{ background: 'var(--black)' }} id="contact">
         <div className="container">
-          <div className="audit-block reveal">
-            <div className="audit-block-inner">
-              <div>
-                <div className="gold-rule" />
-                <p className="f-gold" style={{ marginBottom: 14 }}>Introductory Call · 20 Minutes</p>
-                <h2 className="f-h1" style={{ marginBottom: 18 }}>
-                  Ready to scale<br />seriously?<br /><span className="gold">Let&apos;s find out.</span>
-                </h2>
-                <p className="f-italic">A mutual assessment. Not a sales pitch.</p>
+          <div className="intro-card reveal">
+            <div className="intro-card-header">
+              <p className="f-label" style={{ marginBottom: 14 }}>Introductory Call · 20 Minutes</p>
+              <h2 className="intro-title">A conversation.<br />Not a pitch.</h2>
+            </div>
+            <div className="intro-card-body">
+              <p className="f-body" style={{ maxWidth: 540, marginBottom: 48 }}>
+                20 minutes. We look at your brand, tell you what we see, and work out whether there&apos;s
+                a real fit. No deck. No pressure. If we&apos;re not the right team for you, we&apos;ll say so.
+              </p>
+              <div className="intro-lists">
+                <div>
+                  <p className="f-gold" style={{ marginBottom: 20 }}>Apply if you</p>
+                  <ul className="intro-list">
+                    {[
+                      'Are spending $1,500+/month on paid media',
+                      'Have a product with proven demand',
+                      'Want operators with skin in the game',
+                      'Are ready to move fast and execute',
+                    ].map((item, i) => (
+                      <li key={i} className="intro-item reveal" style={{ transitionDelay: `${i * 0.09}s` }}>
+                        <span className="intro-icon-apply" />
+                        {item}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+                <div>
+                  <p className="f-gold" style={{ marginBottom: 20 }}>Skip if you</p>
+                  <ul className="intro-list">
+                    {[
+                      'Are in early testing with minimal spend',
+                      'Need sign-off on every decision',
+                      'Want a traditional agency relationship',
+                    ].map((item, i) => (
+                      <li key={i} className="intro-item reveal" style={{ transitionDelay: `${(i + 4) * 0.09}s` }}>
+                        <span className="intro-icon-skip" />
+                        {item}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
               </div>
-              <div>
-                <p className="f-body" style={{ marginBottom: 24 }}>
-                  We take on a limited number of clients at a time. Before either side commits, we spend 20 minutes
-                  understanding your brand, your current setup, and where the real leverage is. If there&apos;s a fit,
-                  we&apos;ll tell you exactly how we&apos;d approach your account. If there isn&apos;t, we&apos;ll tell you that too.
-                </p>
-                <p className="f-gold" style={{ marginBottom: 10 }}>Apply if you</p>
-                <ul className="audit-list" style={{ marginBottom: 24 }}>
-                  <li>Are spending $1,500+/month on paid media and want to push harder</li>
-                  <li>Have a product with proven demand that needs serious scale</li>
-                  <li>Want operators with skin in the game — not account managers</li>
-                  <li>Are ready to move fast and execute without hand-holding</li>
-                </ul>
-                <p className="f-gold" style={{ marginBottom: 10 }}>Skip this if you</p>
-                <ul className="audit-list" style={{ marginBottom: 28 }}>
-                  <li>Are in early testing phase with minimal or no active spend</li>
-                  <li>Need weekly check-in calls and sign-off on every decision</li>
-                  <li>Want a traditional managed-service agency relationship</li>
-                </ul>
-                <a className="btn btn-gold" href="https://calendly.com/g-butcherbird/butcherbird-introduction-w-gascoyne" target="_blank" rel="noopener noreferrer">
-                  Book the 20-Minute Call
-                </a>
-                <p className="f-label" style={{ marginTop: 14 }}>Min. active spend: $1,500/month or R15,000/month</p>
-              </div>
+              <a className="btn btn-gold" href="https://calendly.com/g-butcherbird/butcherbird-introduction-w-gascoyne" target="_blank" rel="noopener noreferrer">
+                Book the 20-Minute Call
+              </a>
+              <p className="f-label" style={{ marginTop: 14 }}>Min. active spend: $1,500/month or R15,000/month</p>
             </div>
           </div>
         </div>
