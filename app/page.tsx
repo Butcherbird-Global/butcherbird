@@ -182,55 +182,41 @@ export default function HomePage() {
       {/* WHAT WE DO */}
       <section className="section">
         <div className="container">
-          <div className="sec-label">
-            <span className="sec-label-txt">What we do</span>
-            <div className="sec-label-line" />
-          </div>
-          <div style={{ maxWidth: 580, marginBottom: 52 }}>
-            <h2 className="f-h1 reveal" style={{ marginBottom: 14 }}>Two levers. One system.</h2>
-            <p className="f-body reveal">
-              Paid media and email are the two highest-leverage growth channels for DTC and personal brands.
-              We don&apos;t do SEO, PR, or events. We do these two things with the precision of operators who
-              have skin in the game.
-            </p>
-          </div>
+          <div className="gold-rule reveal" />
+          <h2 className="f-h1 reveal" style={{ marginBottom: 64 }}>What We Do</h2>
           <div className="wwd-grid">
             <div className="wwd-card reveal">
-              <span className="wwd-icon">◈</span>
-              <div className="f-gold" style={{ marginBottom: 14 }}>01 — Paid Media</div>
-              <h3 className="f-h2" style={{ marginBottom: 14 }}>Meta Ad Management</h3>
-              <p className="f-body" style={{ marginBottom: 20 }}>
-                Performance-first Meta campaigns. Static beats video in 5 of 6 brands we&apos;ve tested.
-                BOF is underfunded in almost every account we audit. We fix both.
+              <span className="wwd-num">01</span>
+              <div className="f-gold" style={{ marginBottom: 16 }}>Paid Media</div>
+              <h3 className="f-h2" style={{ marginBottom: 12 }}>Meta Ad Management</h3>
+              <p className="f-italic wwd-tagline">The engine behind R10M in revenue.</p>
+              <p className="f-body" style={{ marginBottom: 24 }}>
+                Performance-first Meta campaigns built from real account data. Static beats video in 5 of 6
+                brands we&apos;ve tested. BOF is underfunded in almost every account we inherit. We fix both.
               </p>
-              <p className="f-label">Campaign architecture · Creative production · Weekly reporting</p>
+              <p className="f-label">Campaign architecture · Creative production · Reporting</p>
             </div>
             <div className="wwd-card reveal">
-              <span className="wwd-icon">⟁</span>
-              <div className="f-gold" style={{ marginBottom: 14 }}>02 — Email Marketing</div>
-              <h3 className="f-h2" style={{ marginBottom: 14 }}>Klaviyo Infrastructure</h3>
-              <p className="f-body" style={{ marginBottom: 20 }}>
-                Most brands leave 20–30% of revenue on the table. We build full Klaviyo systems —
-                flows, automations, campaigns, list health — that compound LTV and reduce ad dependency.
+              <span className="wwd-num">02</span>
+              <div className="f-gold" style={{ marginBottom: 16 }}>Email Marketing</div>
+              <h3 className="f-h2" style={{ marginBottom: 12 }}>Klaviyo Infrastructure</h3>
+              <p className="f-italic wwd-tagline">20–30% of your revenue is sitting in your list.</p>
+              <p className="f-body" style={{ marginBottom: 24 }}>
+                Most brands haven&apos;t built the infrastructure to capture it. We build full Klaviyo systems —
+                flows, automations, campaigns, and list health — that compound LTV and reduce dependency on paid.
               </p>
               <p className="f-label">Flows · Automations · Campaigns · Deliverability</p>
             </div>
             <div className="wwd-card reveal">
-              <span className="wwd-icon">◎</span>
-              <div className="f-gold" style={{ marginBottom: 14 }}>03 — Strategy</div>
-              <h3 className="f-h2" style={{ marginBottom: 14 }}>Full Stack Consulting</h3>
-              <p className="f-body" style={{ marginBottom: 20 }}>
-                For brands that want more than execution. Direct access to the Butcherbird C-suite —
-                monthly strategy sessions, quarterly business reviews, and senior-level thinking applied to your account.
+              <span className="wwd-num">03</span>
+              <div className="f-gold" style={{ marginBottom: 16 }}>Strategy</div>
+              <h3 className="f-h2" style={{ marginBottom: 12 }}>Full-Stack Consulting</h3>
+              <p className="f-italic wwd-tagline">For founders who want the thinking, not just the execution.</p>
+              <p className="f-body" style={{ marginBottom: 24 }}>
+                Direct access to the Butcherbird C-suite. Monthly strategy sessions, quarterly reviews, and
+                senior-level thinking on your account — for brands that want to move faster and smarter.
               </p>
               <p className="f-label">Monthly strategy · Quarterly reviews · Growth roadmap</p>
-            </div>
-          </div>
-          <div style={{ marginTop: 2, background: 'var(--dark2)', padding: 52, textAlign: 'center' }} className="reveal">
-            <p className="f-gold" style={{ marginBottom: 12 }}>Watch · 90 seconds</p>
-            <div style={{ maxWidth: 720, margin: '0 auto', width: '100%', aspectRatio: '16/9', background: 'var(--dark)', border: '1px dashed rgba(184,150,62,.3)', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', gap: 14, cursor: 'pointer' }}>
-              <div className="play-btn" style={{ width: 64, height: 64 }} />
-              <p className="f-label">[VSL placeholder · Brief: open R5M → the problem → operator difference → audit CTA · 90s max]</p>
             </div>
           </div>
         </div>

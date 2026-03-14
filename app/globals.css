@@ -246,12 +246,13 @@ nav {
 @media (max-width: 768px) { .intro-card-header { padding: 36px 28px 32px; } .intro-card-body { padding: 36px 28px; } .intro-lists { grid-template-columns: 1fr; gap: 36px; } }
 
 /* WHAT WE DO */
-.wwd-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2px; margin-top: 52px; }
+.wwd-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2px; }
 .wwd-card { background: var(--dark2); padding: 52px 44px; position: relative; overflow: hidden; transition: background .3s; }
 .wwd-card:hover { background: #1a1a1a; }
 .wwd-card::after { content: ''; position: absolute; bottom: 0; left: 0; right: 0; height: 2px; background: var(--gold); transform: scaleX(0); transform-origin: left; transition: transform .4s; }
 .wwd-card:hover::after { transform: scaleX(1); }
-.wwd-icon { font-size: 24px; margin-bottom: 24px; display: block; color: var(--gold); opacity: .6; }
+.wwd-num { position: absolute; top: 16px; right: 28px; font-weight: 700; font-size: 96px; color: rgba(255,255,255,.03); line-height: 1; pointer-events: none; user-select: none; }
+.wwd-tagline { font-size: clamp(14px, 1.4vw, 18px); margin-bottom: 20px; opacity: .85; }
 @media (max-width: 768px) { .wwd-grid { grid-template-columns: 1fr; } }
 
 /* CASE STUDY GRID */
