@@ -265,7 +265,7 @@ nav {
 /* CLIENT STORY ROWS */
 .cs-rows { display: flex; flex-direction: column; gap: 2px; }
 .cs-row { display: grid; grid-template-columns: max(56px, calc((100vw - 1200px) / 2 + 56px)) 2fr 3fr; }
-.cs-row-num { display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: clamp(28px, 4vw, 64px); letter-spacing: -.03em; color: var(--gold); opacity: 0.4; background: #fff; }
+.cs-row-num { display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: clamp(28px, 4vw, 64px); letter-spacing: -.03em; color: var(--gold); opacity: 0.4; position: relative; z-index: 3; background: linear-gradient(to bottom, transparent, #fff 60px, #fff calc(100% - 60px), transparent); }
 .cs-row-img { position: relative; min-height: 460px; background: var(--dark); overflow: hidden; }
 .cs-row-img-ph { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: clamp(32px, 5vw, 72px); letter-spacing: .04em; text-transform: uppercase; color: rgba(255,255,255,.04); }
 .cs-row-content { background: var(--dark2); padding: 52px 56px; display: flex; flex-direction: column; }
