@@ -45,6 +45,17 @@ export default function HomePage() {
   const [activeTab, setActiveTab] = useState<'performance' | 'creative'>('performance')
   const testiRef = useRef<HTMLDivElement>(null)
   const [testiProgress, setTestiProgress] = useState(0)
+  const [cName, setCName] = useState('')
+  const [cBrand, setCBrand] = useState('')
+  const [cEmail, setCEmail] = useState('')
+  const [cMessage, setCMessage] = useState('')
+
+  function handleContact(e: React.FormEvent) {
+    e.preventDefault()
+    const subject = encodeURIComponent(`Enquiry from ${cName}${cBrand ? ` — ${cBrand}` : ''}`)
+    const body = encodeURIComponent(`Name: ${cName}\nBrand: ${cBrand}\nEmail: ${cEmail}\n\n${cMessage}`)
+    window.location.href = `mailto:hello@butcherbird.global?subject=${subject}&body=${body}`
+  }
 
   useEffect(() => {
     const el = testiRef.current
@@ -325,23 +336,37 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* CTA BANNER */}
-      <section style={{ padding: '120px 0', background: 'var(--black)', textAlign: 'center', position: 'relative', overflow: 'hidden' }}>
-        <div style={{ position: 'absolute', inset: 0, background: 'radial-gradient(ellipse at center,rgba(184,150,62,.08),transparent 65%)', pointerEvents: 'none' }} />
-        <div className="container" style={{ position: 'relative', zIndex: 1, maxWidth: 640 }}>
-          <div className="gold-rule-c reveal" />
-          <p className="f-gold reveal" style={{ marginBottom: 22 }}>The opportunity is right there</p>
-          <h2 className="f-h1 reveal" style={{ marginBottom: 18 }}>
-            You need operators<br />who know how<br /><span className="gold">to take it.</span>
-          </h2>
-          <p className="f-body reveal" style={{ marginBottom: 36, maxWidth: 460, marginLeft: 'auto', marginRight: 'auto' }}>
-            20 minutes. No pitch. We look at your brand, tell you what we see — and if we&apos;re
-            the right fit for each other, we get to work.
-          </p>
-          <a className="btn btn-gold reveal" href="https://calendly.com/g-butcherbird/butcherbird-introduction-w-gascoyne" target="_blank" rel="noopener noreferrer">
-            Book Your Intro Call
-          </a>
-          <p className="f-label reveal" style={{ marginTop: 18 }}>butcherbird.global · Cape Town · hello@butcherbird.global</p>
+      {/* CONTACT */}
+      <section className="section" style={{ background: 'var(--black)', position: 'relative', overflow: 'hidden' }} id="contact-form">
+        <div style={{ position: 'absolute', inset: 0, background: 'radial-gradient(ellipse at center,rgba(184,150,62,.06),transparent 65%)', pointerEvents: 'none' }} />
+        <div className="container" style={{ position: 'relative', zIndex: 1 }}>
+          <div className="gold-rule reveal" />
+          <h2 className="f-h1 reveal" style={{ marginBottom: 64 }}>Let&apos;s talk<br />about your brand.</h2>
+          <div className="contact-grid">
+            <form className="contact-form reveal" onSubmit={handleContact}>
+              <div className="contact-row">
+                <input className="contact-input" type="text" placeholder="Your name" value={cName} onChange={e => setCName(e.target.value)} required />
+                <input className="contact-input" type="text" placeholder="Brand / Company" value={cBrand} onChange={e => setCBrand(e.target.value)} />
+              </div>
+              <input className="contact-input" type="email" placeholder="Email address" value={cEmail} onChange={e => setCEmail(e.target.value)} required />
+              <textarea className="contact-input contact-textarea" placeholder="What are you working on?" value={cMessage} onChange={e => setCMessage(e.target.value)} />
+              <button type="submit" className="btn btn-gold">Send Message</button>
+            </form>
+
+            <div className="contact-alt reveal">
+              <div className="contact-or"><span>or</span></div>
+              <p className="f-label" style={{ marginBottom: 8 }}>Skip the form</p>
+              <p className="f-italic" style={{ marginBottom: 28, color: 'var(--light)' }}>Book a 20-minute intro call directly.</p>
+              <a className="btn btn-outline" href="https://calendly.com/g-butcherbird/butcherbird-introduction-w-gascoyne" target="_blank" rel="noopener noreferrer">
+                Book a Call
+              </a>
+              <div className="contact-meta">
+                <p className="f-label">hello@butcherbird.global</p>
+                <p className="f-label">Cape Town, South Africa</p>
+                <p className="f-label" style={{ marginTop: 8 }}>Min. active spend: $3,000/mo or R50K/mo</p>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
