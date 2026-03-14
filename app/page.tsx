@@ -92,10 +92,7 @@ export default function HomePage() {
       {/* TESTIMONIALS */}
       <section className="section" style={{ background: 'var(--dark)' }}>
         <div className="container">
-          <div className="sec-label">
-            <span className="sec-label-txt">What clients say</span>
-            <div className="sec-label-line" />
-          </div>
+          <h2 className="f-h1 reveal" style={{ marginBottom: 0 }}>What our<br />clients say.</h2>
           <div className="testi-grid">
             {[
               { brand: 'BUUB', oneliner: 'Organic SPF50 sunscreen — DTC + retail' },
