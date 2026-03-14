@@ -1,33 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,400;1,500&display=swap');
 
-*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; cursor: none !important; }
-
-/* CUSTOM CURSOR */
-.cursor-dot {
-  position: fixed;
-  top: -3px; left: -3px;
-  width: 6px; height: 6px;
-  background: var(--gold);
-  border-radius: 50%;
-  pointer-events: none;
-  z-index: 9999;
-  will-change: transform;
-  transition: background .2s, width .2s, height .2s, top .2s, left .2s;
-}
-.cursor-ring {
-  position: fixed;
-  top: -14px; left: -14px;
-  width: 28px; height: 28px;
-  border: 1px solid rgba(184,150,62,.5);
-  border-radius: 50%;
-  pointer-events: none;
-  z-index: 9998;
-  will-change: transform;
-  transition: width .25s ease, height .25s ease, top .25s ease, left .25s ease, border-color .25s;
-}
-.cursor-dot.cursor-active { background: var(--off-white); width: 8px; height: 8px; top: -4px; left: -4px; }
-.cursor-ring.cursor-active { width: 44px; height: 44px; top: -22px; left: -22px; border-color: var(--gold); }
-@media (hover: none) { .cursor-dot, .cursor-ring { display: none; } }
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
 :root {
   --black: #0A0A0A;

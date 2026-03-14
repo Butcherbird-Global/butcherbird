@@ -1,3 +1,12 @@
+## Scope Lock
+Every dev task on this project requires a scope declaration before any file is touched.
+State: task (one sentence), files to read, files to change, files NOT being touched.
+Do not deviate from the declared scope. If more files are needed, stop and ask.
+Read GOAL-FLOW.md at session start. Check every task against it before proceeding.
+See global CLAUDE.md → Dev Guardrails for full rules.
+
+---
+
 # Butcherbird — Claude Context File
 
 ## Project
