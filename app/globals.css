@@ -12,8 +12,7 @@
   pointer-events: none;
   z-index: 9999;
   will-change: transform;
-  opacity: 0;
-  transition: opacity .3s, background .2s, width .2s, height .2s, top .2s, left .2s;
+  transition: background .2s, width .2s, height .2s, top .2s, left .2s;
 }
 .cursor-ring {
   position: fixed;
@@ -24,8 +23,7 @@
   pointer-events: none;
   z-index: 9998;
   will-change: transform;
-  opacity: 0;
-  transition: opacity .3s, width .25s ease, height .25s ease, top .25s ease, left .25s ease, border-color .25s;
+  transition: width .25s ease, height .25s ease, top .25s ease, left .25s ease, border-color .25s;
 }
 .cursor-dot.cursor-active { background: var(--off-white); width: 8px; height: 8px; top: -4px; left: -4px; }
 .cursor-ring.cursor-active { width: 44px; height: 44px; top: -22px; left: -22px; border-color: var(--gold); }

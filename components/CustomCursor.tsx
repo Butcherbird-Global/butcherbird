@@ -11,23 +11,19 @@ export default function CustomCursor() {
     const ring = ringRef.current
     if (!dot || !ring) return
 
-    let mouseX = 0, mouseY = 0
-    let ringX = 0, ringY = 0
+    let mouseX = -100
+    let mouseY = -100
+    let ringX = -100
+    let ringY = -100
     let rafId: number
-    let visible = false
 
-    function show() {
-      if (visible) return
-      visible = true
-      dot.style.opacity = '1'
-      ring.style.opacity = '1'
-    }
+    dot.style.transform = `translate(${mouseX}px, ${mouseY}px)`
+    ring.style.transform = `translate(${ringX}px, ${ringY}px)`
 
     function onMouseMove(e: MouseEvent) {
       mouseX = e.clientX
       mouseY = e.clientY
       dot.style.transform = `translate(${mouseX}px, ${mouseY}px)`
-      show()
     }
 
     function onMouseOver(e: MouseEvent) {
