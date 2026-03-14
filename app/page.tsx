@@ -188,8 +188,8 @@ export default function HomePage() {
             <div className="wwd-card reveal">
               <span className="wwd-num">01</span>
               <div className="f-gold" style={{ marginBottom: 16 }}>Paid Media</div>
-              <h3 className="f-h2" style={{ marginBottom: 12 }}>Meta Ad Management</h3>
-              <p className="f-italic wwd-tagline">The engine behind R10M in revenue.</p>
+              <h3 className="f-h2" style={{ marginBottom: 12 }}>Meta & Google Ads Management</h3>
+              <p className="f-italic wwd-tagline">The engine behind the growth of our portfolio brands, and client brands.</p>
               <p className="f-body" style={{ marginBottom: 24 }}>
                 Performance-first Meta campaigns built from real account data. Static beats video in 5 of 6
                 brands we&apos;ve tested. BOF is underfunded in almost every account we inherit. We fix both.
