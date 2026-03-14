@@ -2,10 +2,10 @@
 
 import { useState, useRef, useEffect } from 'react'
 import Link from 'next/link'
+import Image from 'next/image'
 import Footer from '@/components/Footer'
 import Modal from '@/components/Modal'
 import RevealOnScroll from '@/components/RevealOnScroll'
-import CaseStudyCard from '@/components/CaseStudyCard'
 import { caseStudies, CaseStudy } from '@/lib/data'
 
 const homeStudies = caseStudies
@@ -42,6 +42,7 @@ function CountUp({ to, decimals = 0 }: { to: number; decimals?: number }) {
 
 export default function HomePage() {
   const [activeModal, setActiveModal] = useState<CaseStudy | null>(null)
+  const [activeTab, setActiveTab] = useState<'performance' | 'creative'>('performance')
   const testiRef = useRef<HTMLDivElement>(null)
   const [testiProgress, setTestiProgress] = useState(0)
 
@@ -230,16 +231,40 @@ export default function HomePage() {
           <div className="gold-rule reveal" />
           <h2 className="f-h1 reveal" style={{ marginBottom: 12, color: 'var(--black)' }}>Client Stories<br />& Work</h2>
           <p className="f-body reveal" style={{ maxWidth: 420, marginBottom: 52, color: 'rgba(0,0,0,0.5)' }}>Every number is real. Click any brand to see the full story.</p>
-          <div className="cs-grid">
-            {homeStudies.map((s) => (
-              <CaseStudyCard
-                key={s.id}
-                study={s}
-                onClick={() => setActiveModal(s)}
-                metrics={s.metrics.slice(0, 2)}
-              />
-            ))}
-          </div>
+        </div>
+        <div className="cs-rows">
+          {homeStudies.map((s) => (
+            <div key={s.id} className="cs-row reveal">
+              <div className="cs-row-img">
+                {s.image
+                  ? <Image src={s.image} alt={s.brand} fill style={{ objectFit: 'cover' }} />
+                  : <span className="cs-row-img-ph">{s.brand}</span>
+                }
+              </div>
+              <div className="cs-row-content">
+                <div className="cs-row-tag">{s.tag}</div>
+                <h3 className="cs-row-brand">{s.brand}</h3>
+                <p className="f-italic" style={{ marginBottom: 0 }}>{s.subtitle}</p>
+                <div className="cs-row-metrics">
+                  {s.metrics.slice(0, 3).map((m) => (
+                    <div key={m.lbl} className="cs-row-met">
+                      <div className="cs-row-met-val">{m.val}</div>
+                      <div className="cs-row-met-lbl">{m.lbl}</div>
+                    </div>
+                  ))}
+                </div>
+                <p className="f-body" style={{ marginBottom: 0 }}>{s.desc}</p>
+                <div className="cs-row-actions">
+                  <button className="cs-btn-perf" onClick={() => { setActiveTab('performance'); setActiveModal(s) }}>
+                    View Performance
+                  </button>
+                  <button className="cs-btn-creative" onClick={() => { setActiveTab('creative'); setActiveModal(s) }}>
+                    View Creative Work
+                  </button>
+                </div>
+              </div>
+            </div>
+          ))}
         </div>
       </section>
 
@@ -318,7 +343,7 @@ export default function HomePage() {
 
       <Footer />
 
-      {activeModal && <Modal study={activeModal} onClose={() => setActiveModal(null)} />}
+      {activeModal && <Modal study={activeModal} onClose={() => setActiveModal(null)} initialTab={activeTab} />}
     </>
   )
 }

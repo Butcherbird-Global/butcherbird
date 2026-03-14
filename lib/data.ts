@@ -12,6 +12,8 @@ export interface CaseStudy {
   category: 'internal' | 'client'
   subtitle: string
   image?: string
+  performanceScreenshots?: string[]
+  creativeAssets?: { type: 'static' | 'email' | 'video'; src: string; caption?: string }[]
 }
 
 export const caseStudies: CaseStudy[] = [
