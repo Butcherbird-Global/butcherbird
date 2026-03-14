@@ -1,6 +1,6 @@
 'use client'
 
-import { useState } from 'react'
+import { useState, useRef, useEffect } from 'react'
 import Link from 'next/link'
 import Footer from '@/components/Footer'
 import Modal from '@/components/Modal'
@@ -9,6 +9,36 @@ import CaseStudyCard from '@/components/CaseStudyCard'
 import { caseStudies, CaseStudy } from '@/lib/data'
 
 const homeStudies = caseStudies
+
+function CountUp({ to, decimals = 0 }: { to: number; decimals?: number }) {
+  const ref = useRef<HTMLSpanElement>(null)
+  const [count, setCount] = useState(0)
+
+  useEffect(() => {
+    const el = ref.current
+    if (!el) return
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (!entry.isIntersecting) return
+        observer.disconnect()
+        const duration = 1800
+        const start = performance.now()
+        function tick(now: number) {
+          const progress = Math.min((now - start) / duration, 1)
+          const eased = 1 - Math.pow(1 - progress, 3)
+          setCount(parseFloat((to * eased).toFixed(decimals)))
+          if (progress < 1) requestAnimationFrame(tick)
+        }
+        requestAnimationFrame(tick)
+      },
+      { threshold: 0.4 }
+    )
+    observer.observe(el)
+    return () => observer.disconnect()
+  }, [to, decimals])
+
+  return <span ref={ref}>{decimals ? count.toFixed(decimals) : count}</span>
+}
 
 export default function HomePage() {
   const [activeModal, setActiveModal] = useState<CaseStudy | null>(null)
@@ -50,11 +80,11 @@ export default function HomePage() {
       <div className="stats-strip">
         <div className="container">
           <div className="stats-grid">
-            <div className="stat reveal"><div className="stat-num"><span className="gold">R10M+</span></div><div className="f-label">Revenue generated</div></div>
-            <div className="stat reveal"><div className="stat-num">4.6<span className="gold">×</span></div><div className="f-label">Blended ROAS avg</div></div>
-            <div className="stat reveal"><div className="stat-num"><span className="gold">4</span></div><div className="f-label">Portfolio brands</div></div>
-            <div className="stat reveal"><div className="stat-num">50<span className="gold">K+</span></div><div className="f-label">Customers acquired</div></div>
-            <div className="stat reveal"><div className="stat-num">600<span className="gold">+</span></div><div className="f-label">Retail doors</div></div>
+            <div className="stat reveal"><div className="stat-num"><span className="gold">R<CountUp to={10} />M+</span></div><div className="f-label">Revenue generated</div></div>
+            <div className="stat reveal"><div className="stat-num"><CountUp to={4.6} decimals={1} /><span className="gold">×</span></div><div className="f-label">Blended ROAS avg</div></div>
+            <div className="stat reveal"><div className="stat-num"><span className="gold"><CountUp to={4} /></span></div><div className="f-label">Portfolio brands</div></div>
+            <div className="stat reveal"><div className="stat-num"><CountUp to={50} /><span className="gold">K+</span></div><div className="f-label">Customers acquired</div></div>
+            <div className="stat reveal"><div className="stat-num"><CountUp to={600} /><span className="gold">+</span></div><div className="f-label">Retail doors</div></div>
           </div>
         </div>
       </div>
