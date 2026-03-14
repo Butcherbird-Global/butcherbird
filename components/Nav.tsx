@@ -15,7 +15,7 @@ export default function Nav() {
     <nav>
       <div className="nav-inner">
         <Link href="/" onClick={closeMenu}>
-          <Image src="/Butcherbird Logo.png" alt="Butcherbird" className="nav-logo" width={200} height={56} />
+          <Image src="/Butcherbird Logo.png" alt="Butcherbird" className="nav-logo" width={200} height={72} style={{ width: 'auto' }} />
         </Link>
         <ul className={`nav-links${menuOpen ? ' nav-open' : ''}`}>
           <li>
