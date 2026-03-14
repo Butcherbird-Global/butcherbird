@@ -106,6 +106,7 @@ export default function HomePage() {
       <section className="section" style={{ background: 'var(--dark)' }}>
         <div className="container">
           <h2 className="f-h1 reveal" style={{ marginBottom: 0 }}>What our<br />clients say.</h2>
+          <div style={{ position: 'relative' }}>
           <div className="testi-grid" ref={testiRef}>
             {[
               { brand: 'BUUB', person: 'Larneke Van Vyl', role: 'Brand Manager', location: 'Cape Town', oneliner: "100% organic, reef-safe SPF50 sunscreen — Original, Tinted, Kids, and Mini" },
@@ -130,6 +131,8 @@ export default function HomePage() {
                 </div>
               </div>
             ))}
+          </div>
+          <div className="testi-arrow-hint" style={{ opacity: testiProgress > 0.02 ? 0 : 1 }} />
           </div>
           <div className="testi-scrollbar">
             <div className="testi-scrollbar-fill" style={{ width: `${testiProgress * 100}%` }} />
