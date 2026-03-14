@@ -226,7 +226,7 @@ nav {
 .play-btn::after { content: ''; border-left: 13px solid var(--gold); border-top: 7px solid transparent; border-bottom: 7px solid transparent; margin-left: 3px; }
 .testi-scrollbar { height: 2px; background: rgba(255,255,255,0.08); margin-top: 20px; }
 .testi-scrollbar-fill { height: 100%; background: var(--gold); transition: width .1s linear; }
-.testi-arrow-hint { position: absolute; right: 0; top: 0; bottom: 0; width: 100px; background: linear-gradient(to right, transparent, var(--dark) 80%); pointer-events: none; transition: opacity .4s ease; display: flex; align-items: center; justify-content: flex-end; padding-right: 18px; }
+.testi-arrow-hint { position: absolute; right: 0; top: 0; bottom: 0; width: 100px; background: linear-gradient(to right, transparent, var(--dark) 80%); border: none; cursor: pointer; transition: opacity .4s ease; display: flex; align-items: center; justify-content: flex-end; padding-right: 18px; }
 .testi-arrow-hint::after { content: ''; width: 10px; height: 10px; border-right: 2px solid var(--gold); border-top: 2px solid var(--gold); transform: rotate(45deg); }
 
 /* AUDIT BLOCK */
