@@ -383,7 +383,6 @@ export default function HomePage() {
                 { initials: 'RC', name: 'Richard Clarke', role: 'CFO' },
                 { initials: 'IT', name: 'Ilan Tait', role: 'Portfolio Manager' },
                 { initials: 'KM', name: 'Kathleen Murphy', role: 'Marketing Director' },
-                { initials: 'TB', name: 'Tian Bester', role: 'Paid Media Manager' },
                 { initials: 'MC', name: 'Maximus Clarke', role: 'Warehouse & Logistics Manager' },
               ].map((member) => (
                 <div key={member.name} className="team-card">
@@ -401,6 +400,7 @@ export default function HomePage() {
             <p className="f-gold" style={{ marginBottom: 28, letterSpacing: '0.2em' }}>Team</p>
             <div className="team-grid-staff">
               {[
+                { initials: 'TB', name: 'Tian Bester', role: 'Paid Media Manager' },
                 { initials: 'CB', name: 'Claudia Barnard', role: 'Graphic Design' },
                 { initials: 'RT', name: 'Rhett Tomlinson', role: 'Graphic Design & Creative' },
                 { initials: 'KF', name: 'Kaylee Frankson', role: 'Email Marketing Manager' },
