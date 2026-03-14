@@ -92,14 +92,10 @@ export default function PartnerPage() {
                 <div className="gold-rule" style={{ marginBottom: 20 }} />
                 <p className="f-gold" style={{ marginBottom: 14 }}>Why partner with Butcherbird</p>
                 <h2 className="f-h1" style={{ marginBottom: 20, color: 'var(--off-white)' }}>We don&apos;t just run ads.<br /><span className="gold">We own the outcome.</span></h2>
-                <p className="f-body" style={{ marginBottom: 18 }}>
+                <p className="f-body" style={{ marginBottom: 28 }}>
                   In 7 months, we&apos;ve taken brands from zero to meaningful revenue,
                   opened 600+ retail doors, acquired 50,000+ customers, and generated R10,000,000+
                   from R2,173,913 in ad spend — documented in full.
-                </p>
-                <p className="f-body" style={{ marginBottom: 28 }}>
-                  We operate on South African talent costs and charge in hard currency.
-                  That arbitrage is structural and defensible. Every partner in our orbit benefits from it.
                 </p>
                 <a className="btn btn-gold" href="https://calendly.com/g-butcherbird/butcherbird-introduction-w-gascoyne" target="_blank" rel="noopener noreferrer">Book a Call</a>
               </div>
@@ -107,7 +103,7 @@ export default function PartnerPage() {
                 <div className="kpi"><div className="kpi-val gold">7</div><div className="kpi-lbl">Months operating</div></div>
                 <div className="kpi"><div className="kpi-val">3</div><div className="kpi-lbl">Internal brands built</div></div>
                 <div className="kpi"><div className="kpi-val">18</div><div className="kpi-lbl">Team members</div></div>
-                <div className="kpi"><div className="kpi-val gold">~18:1</div><div className="kpi-lbl">ZAR:USD edge</div></div>
+                <div className="kpi"><div className="kpi-val gold">50<span style={{fontSize:'0.7em'}}>K+</span></div><div className="kpi-lbl">Customers acquired</div></div>
                 <div className="kpi" style={{ gridColumn: '1 / -1' }}>
                   <div className="kpi-val">R10<span className="gold">M+</span></div>
                   <div className="kpi-lbl">Revenue from R2,173,913 in ad spend</div>
