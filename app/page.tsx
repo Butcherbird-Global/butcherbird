@@ -156,7 +156,7 @@ export default function HomePage() {
                   <p className="intro-list-heading reveal">You&apos;re a fit if</p>
                   <ul className="intro-list">
                     {[
-                      { text: 'Spending $1,500+/month on paid media and want to push harder' },
+                      { text: 'Spending $3,000+/month on paid media and want to push harder' },
                       { text: 'Have a product people are already buying — and want to scale it' },
                       { text: 'Want a team to handle all your creative production end to end' },
                       { text: 'Want a team who can own your entire performance marketing stack' },
@@ -173,7 +173,7 @@ export default function HomePage() {
               <a className="btn btn-gold" href="https://calendly.com/g-butcherbird/butcherbird-introduction-w-gascoyne" target="_blank" rel="noopener noreferrer">
                 Book the 20-Minute Call
               </a>
-              <p className="f-label" style={{ marginTop: 14 }}>Min. active spend: $1,500/month or R15,000/month</p>
+              <p className="f-label" style={{ marginTop: 14 }}>Min. active spend: $3,000/month or R50,000/month</p>
             </div>
           </div>
         </div>
