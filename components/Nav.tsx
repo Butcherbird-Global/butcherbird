@@ -8,6 +8,7 @@ import Image from 'next/image'
 export default function Nav() {
   const pathname = usePathname()
   const [menuOpen, setMenuOpen] = useState(false)
+  const [logoVisible, setLogoVisible] = useState(false)
 
   function closeMenu() { setMenuOpen(false) }
 
@@ -15,7 +16,7 @@ export default function Nav() {
     <nav>
       <div className="nav-inner">
         <Link href="/" onClick={closeMenu}>
-          <Image src="/Butcherbird Logo.png" alt="Butcherbird" className="nav-logo" width={200} height={72} style={{ width: 'auto' }} />
+          <Image src="/Butcherbird Logo.png" alt="Butcherbird" className="nav-logo" width={200} height={72} style={{ width: 'auto', opacity: logoVisible ? 1 : 0, transition: 'opacity .6s ease' }} onLoad={() => setLogoVisible(true)} />
         </Link>
         <ul className={`nav-links${menuOpen ? ' nav-open' : ''}`}>
           <li>
