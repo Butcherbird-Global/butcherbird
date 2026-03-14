@@ -95,15 +95,15 @@ export default function HomePage() {
           <h2 className="f-h1 reveal" style={{ marginBottom: 0 }}>What our<br />clients say.</h2>
           <div className="testi-grid">
             {[
-              { brand: 'BUUB', oneliner: 'Organic SPF50 sunscreen — DTC + retail' },
-              { brand: 'SCHNOZZ', oneliner: 'Nasal & mouth tape strips — DTC + 182 retail doors' },
-              { brand: 'LAKRIDS', oneliner: 'Premium liquorice confectionery — international DTC' },
-              { brand: 'NUMUTI', oneliner: 'Wellness supplements — DTC' },
-              { brand: 'BONNIE BIO', oneliner: 'Organic wellness brand — DTC' },
-              { brand: 'HELPDESK', oneliner: 'Digital services platform — MENA markets' },
-              { brand: 'HIBA BALFAQIH', oneliner: 'School of Mindhacking — coaching & personal brand' },
-              { brand: 'SHOOT STUDIOS', oneliner: 'Creative production studio — Cape Town' },
-              { brand: 'KOKEE', oneliner: 'DTC lifestyle brand' },
+              { brand: 'BUUB', person: 'Larneke Van Vyl', role: 'Brand Manager', location: 'Cape Town', oneliner: "SA's first 100% certified organic sunscreen brand — disrupting the category from the ground up" },
+              { brand: 'SCHNOZZ', person: 'Ilan Tait', role: 'Co-Founder', location: 'Johannesburg', oneliner: "SA's leading nasal strip brand — from a single SKU to 182+ retail doors in under 12 months" },
+              { brand: 'LAKRIDS', person: 'Catherine Bullough', role: 'SA Licence Owner', location: 'Cape Town', oneliner: "Denmark's cult-favourite luxury liquorice brand — Bülow's iconic confectionery brought to South Africa" },
+              { brand: 'NUMUTI', person: 'Daniel Fine', role: 'Founder', location: 'Cape Town', oneliner: "Holistic wellness brand crafting premium supplements and self-care rituals for modern high-performers" },
+              { brand: 'BONNIE BIO', person: 'Frank McDouall', role: 'Owner', location: 'Johannesburg', oneliner: "Natural & organic wellness brand — clean, honest formulations for everyday health" },
+              { brand: 'HELPDESK', person: 'Mohammed Al Sabbagh', role: 'Founder', location: 'Dubai', oneliner: "On-demand home services app — connecting UAE residents to trusted professionals, instantly" },
+              { brand: 'HIBA BALFAQIH', person: 'Hiba Balfaqih', role: 'Founder', location: 'New York', oneliner: "School of Mindhacking — transformational coaching for high-performance individuals rewriting their story" },
+              { brand: 'SHOOT STUDIOS', person: 'Elad', role: 'Owner', location: 'Cape Town', oneliner: "Cape Town's creative production house — photography, video and content for brands that demand attention" },
+              { brand: 'KOKEE', person: 'Chris', role: 'Founder', location: 'Johannesburg', oneliner: "Premium DTC lifestyle brand — built for the modern South African consumer" },
             ].map((t) => (
               <div key={t.brand} className="testi-card reveal">
                 <div className="testi-video-ph">
@@ -111,8 +111,8 @@ export default function HomePage() {
                 </div>
                 <div className="testi-info">
                   <div className="testi-brand">{t.brand}</div>
-                  <div className="testi-person">[Name]</div>
-                  <div className="testi-location">[City, Country]</div>
+                  <div className="testi-person">{t.person}</div>
+                  <div className="testi-location">{t.role} · {t.location}</div>
                   <div className="testi-oneliner">{t.oneliner}</div>
                 </div>
               </div>
