@@ -14,7 +14,7 @@ export default function PartnerPage() {
 
   function handleSubmit(e: React.FormEvent) {
     e.preventDefault()
-    const subject = encodeURIComponent(`Partnership Enquiry — ${pName}${pCompany ? ` · ${pCompany}` : ''}`)
+    const subject = encodeURIComponent(`Partnership Application — ${pName}${pCompany ? ` · ${pCompany}` : ''}`)
     const body = encodeURIComponent(`Name: ${pName}\nCompany: ${pCompany}\nEmail: ${pEmail}\nType: ${pType}\n\n${pMessage}`)
     window.location.href = `mailto:g@butcherbird.global?subject=${subject}&body=${body}`
   }
@@ -28,15 +28,15 @@ export default function PartnerPage() {
         <div className="container">
           <div className="gold-rule anim d1" />
           <p className="f-gold anim d1" style={{ marginBottom: 20 }}>Partnership</p>
-          <h1 className="f-display anim d2" style={{ maxWidth: 780, marginBottom: 24 }}>
-            The engine for<br />your brand&apos;s<br /><span className="gold">rapid scale.</span>
+          <h1 className="f-display anim d2" style={{ maxWidth: 780, marginBottom: 28 }}>
+            We are<br />looking for<br /><span className="gold">the next one.</span>
           </h1>
           <p className="f-italic anim d3" style={{ maxWidth: 520, marginBottom: 40 }}>
-            We build brands from nothing — infrastructure, team, system, and proof all in-house.
-            We are actively looking for the right partners to deploy it with.
+            In 7 months we built three brands from nothing.
+            We are actively looking for the right partner to deploy the system with.
           </p>
           <div style={{ display: 'flex', gap: 16, flexWrap: 'wrap' }} className="anim d4">
-            <a className="btn btn-gold" href="#partner-form">Explore Partnership</a>
+            <a className="btn btn-gold" href="#partner-form">Apply Now</a>
             <Link className="btn btn-outline" href="/portfolio">See Our Brands</Link>
           </div>
         </div>
@@ -46,91 +46,136 @@ export default function PartnerPage() {
       <section className="section" style={{ background: 'var(--dark)' }}>
         <div className="container">
           <div className="gold-rule reveal" />
-          <h2 className="f-h1 reveal" style={{ marginBottom: 52 }}>Who we<br />partner with.</h2>
-          <div className="partner-grid">
-            {[
-              {
-                num: '01',
-                label: 'Venture Capital',
-                title: 'Fund the machine. Share the upside.',
-                body: "We build and scale consumer brands. If you're looking to co-fund our own projects or deploy capital into brands you've already backed — we are the operating team. We bring the system, the creative, the media buying, and the results.",
-              },
-              {
-                num: '02',
-                label: 'Entrepreneurs',
-                title: 'Great product. No founding team. We can be it.',
-                body: "You've built something people want. But scaling a DTC brand takes a full team — media buyers, creatives, email marketers, strategists. You don't need to hire all of that. We can be your founding growth team, with skin in the game.",
-              },
-              {
-                num: '03',
-                label: 'Talent',
-                title: 'Want to work for the best company in the game?',
-                body: "We're building the fastest-moving growth agency in Africa. If you are exceptional at what you do and want to be somewhere that matches your ambition — we want to hear from you.",
-              },
-            ].map((card) => (
-              <div key={card.num} className="p-card reveal">
-                <div className="p-card-num">{card.num}</div>
-                <div className="f-gold" style={{ marginBottom: 14 }}>{card.label}</div>
-                <h3 className="f-h2" style={{ marginBottom: 14 }}>{card.title}</h3>
-                <p className="f-body">{card.body}</p>
+          <p className="f-gold reveal" style={{ marginBottom: 52 }}>Who we are looking for</p>
+          <div className="pw-rows">
+            <div className="pw-row reveal">
+              <div className="pw-row-left">
+                <div className="pw-row-num">01</div>
+                <div className="f-gold">Venture Capital</div>
               </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* WHY PARTNER */}
-      <section className="section" style={{ background: '#fff' }}>
-        <div className="container">
-          <div className="manifesto reveal">
-            <div className="manifesto-inner">
-              <div>
-                <div className="gold-rule" style={{ marginBottom: 20 }} />
-                <p className="f-gold" style={{ marginBottom: 14 }}>Why partner with Butcherbird</p>
-                <h2 className="f-h1" style={{ marginBottom: 20, color: 'var(--off-white)' }}>We don&apos;t just run ads.<br /><span className="gold">We own the outcome.</span></h2>
-                <p className="f-body" style={{ marginBottom: 28 }}>
-                  In 7 months, we&apos;ve taken brands from zero to meaningful revenue,
-                  opened 600+ retail doors, acquired 50,000+ customers, and generated R10,000,000+
-                  from R2,173,913 in ad spend — documented in full.
+              <div className="pw-row-right">
+                <h2 className="f-h2" style={{ marginBottom: 16 }}>
+                  You want your portfolio brands to actually scale.
+                </h2>
+                <p className="f-body">
+                  We build and operate consumer brands — infrastructure, creative, media, system.
+                  If you&apos;re looking to co-fund our own projects, or deploy capital into brands
+                  you&apos;ve already backed and need a real operating team behind them — that&apos;s us.
+                  We bring the machine. You bring the capital.
                 </p>
-                <a className="btn btn-gold" href="https://calendly.com/g-butcherbird/butcherbird-introduction-w-gascoyne" target="_blank" rel="noopener noreferrer">Book a Call</a>
               </div>
-              <div className="kpi-mini-grid">
-                <div className="kpi"><div className="kpi-val gold">7</div><div className="kpi-lbl">Months operating</div></div>
-                <div className="kpi"><div className="kpi-val">3</div><div className="kpi-lbl">Internal brands built</div></div>
-                <div className="kpi"><div className="kpi-val">18</div><div className="kpi-lbl">Team members</div></div>
-                <div className="kpi"><div className="kpi-val gold">50<span style={{fontSize:'0.7em'}}>K+</span></div><div className="kpi-lbl">Customers acquired</div></div>
-                <div className="kpi" style={{ gridColumn: '1 / -1' }}>
-                  <div className="kpi-val">R10<span className="gold">M+</span></div>
-                  <div className="kpi-lbl">Revenue from R2,173,913 in ad spend</div>
-                </div>
+            </div>
+
+            <div className="pw-row reveal">
+              <div className="pw-row-left">
+                <div className="pw-row-num">02</div>
+                <div className="f-gold">Entrepreneurs</div>
+              </div>
+              <div className="pw-row-right">
+                <h2 className="f-h2" style={{ marginBottom: 16 }}>
+                  Great product. No founding team. We can be it.
+                </h2>
+                <p className="f-body">
+                  You&apos;ve built something people want. Scaling a DTC brand takes a full team —
+                  media buyers, creatives, email marketers, strategists. You don&apos;t need to hire
+                  all of that. We become your founding growth team, with skin in the game,
+                  accountable to results.
+                </p>
+              </div>
+            </div>
+
+            <div className="pw-row reveal">
+              <div className="pw-row-left">
+                <div className="pw-row-num">03</div>
+                <div className="f-gold">Talent</div>
+              </div>
+              <div className="pw-row-right">
+                <h2 className="f-h2" style={{ marginBottom: 16 }}>
+                  Want to work for the best company in the game?
+                </h2>
+                <p className="f-body">
+                  We&apos;re building the fastest-moving growth agency in Africa. If you are
+                  exceptional at what you do and want to be somewhere that matches your ambition —
+                  we want to hear from you. Not a corporate job. Real ownership of real outcomes.
+                </p>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* CONTACT FORM */}
+      {/* THE PROOF */}
+      <section className="section" style={{ background: '#fff' }}>
+        <div className="container">
+          <div className="pw-proof reveal">
+            <div className="gold-rule" style={{ marginBottom: 28 }} />
+            <blockquote className="pw-proof-quote">
+              R10,000,000+ from R2,173,913 in ad spend.<br />
+              In 7 months. Documented in full.
+            </blockquote>
+            <p className="f-label" style={{ color: 'rgba(0,0,0,0.35)', marginTop: 28, marginBottom: 40 }}>
+              — Butcherbird Global · Cape Town, South Africa · 2025
+            </p>
+            <a
+              className="btn btn-gold"
+              href="https://calendly.com/g-butcherbird/butcherbird-introduction-w-gascoyne"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Book a Call
+            </a>
+          </div>
+        </div>
+      </section>
+
+      {/* APPLICATION FORM */}
       <section className="section" style={{ background: 'var(--dark)' }} id="partner-form">
         <div className="container">
           <div className="pf-inner reveal">
             <div>
               <div className="gold-rule" style={{ marginBottom: 20 }} />
-              <p className="f-gold" style={{ marginBottom: 14 }}>Get in touch</p>
-              <h2 className="f-h1" style={{ marginBottom: 18 }}>Tell us about<br />your brand.</h2>
-              <p className="f-body" style={{ marginBottom: 18 }}>
-                VC with a portfolio brand that needs a growth engine. Entrepreneur with a proven
-                product looking for capital and execution. Exceptional operator who wants to build
-                something real. Fill in the form and we&apos;ll be in touch within 24 hours.
+              <p className="f-gold" style={{ marginBottom: 14 }}>Apply</p>
+              <h2 className="f-h1" style={{ marginBottom: 18 }}>Tell us why<br />this makes sense.</h2>
+              <p className="f-body" style={{ marginBottom: 28 }}>
+                We take on a small number of partnerships. We read every submission and
+                respond personally. If you have something real, be specific about it.
               </p>
-              <p className="f-italic">No fluff. We read every submission and respond personally.</p>
+              <p className="f-italic">No fluff. Just tell us what you&apos;ve got.</p>
             </div>
             <form onSubmit={handleSubmit}>
+              <p className="f-label" style={{ color: 'var(--mid)', marginBottom: 20 }}>
+                We respond within 24 hours · g@butcherbird.global
+              </p>
               <div className="pf-grid">
-                <input className="pf-input" placeholder="Your name" type="text" required value={pName} onChange={e => setPName(e.target.value)} />
-                <input className="pf-input" placeholder="Company / brand" type="text" value={pCompany} onChange={e => setPCompany(e.target.value)} />
-                <input className="pf-input pf-full" placeholder="Email address" type="email" required value={pEmail} onChange={e => setPEmail(e.target.value)} />
-                <select className="pf-input pf-full" style={{ appearance: 'none', WebkitAppearance: 'none', cursor: 'pointer' }} value={pType} onChange={e => setPType(e.target.value)}>
+                <input
+                  className="pf-input"
+                  placeholder="Your name"
+                  type="text"
+                  required
+                  value={pName}
+                  onChange={e => setPName(e.target.value)}
+                />
+                <input
+                  className="pf-input"
+                  placeholder="Company / brand"
+                  type="text"
+                  value={pCompany}
+                  onChange={e => setPCompany(e.target.value)}
+                />
+                <input
+                  className="pf-input pf-full"
+                  placeholder="Email address"
+                  type="email"
+                  required
+                  value={pEmail}
+                  onChange={e => setPEmail(e.target.value)}
+                />
+                <select
+                  className="pf-input pf-full"
+                  style={{ appearance: 'none', WebkitAppearance: 'none', cursor: 'pointer' }}
+                  value={pType}
+                  onChange={e => setPType(e.target.value)}
+                >
                   <option value="" disabled>Partnership type</option>
                   <option>VC / Portfolio brand</option>
                   <option>Entrepreneur — equity partnership</option>
@@ -140,17 +185,14 @@ export default function PartnerPage() {
                 <textarea
                   className="pf-input pf-full"
                   rows={5}
-                  placeholder="Tell us about your brand, product, and what you're looking for. Be specific."
+                  placeholder="What have you got, and why does this make sense? Be specific."
                   value={pMessage}
                   onChange={e => setPMessage(e.target.value)}
                 />
                 <div className="pf-full">
                   <button type="submit" className="btn btn-gold" style={{ width: '100%' }}>
-                    Send It
+                    Submit Application
                   </button>
-                  <p className="f-label" style={{ marginTop: 12, textAlign: 'center' }}>
-                    We respond within 24 hours · g@butcherbird.global
-                  </p>
                 </div>
               </div>
             </form>
