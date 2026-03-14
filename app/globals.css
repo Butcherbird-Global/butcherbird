@@ -233,9 +233,11 @@ nav {
 .intro-card { background: var(--dark2); box-shadow: 0 32px 96px rgba(0,0,0,0.5); overflow: hidden; }
 .intro-title { font-weight: 700; font-size: clamp(28px, 4vw, 56px); line-height: 1; letter-spacing: -.02em; text-transform: uppercase; color: var(--black); }
 .intro-card-body { padding: 52px 64px; }
+.intro-body-lead { font-size: 16px; line-height: 1.8; color: var(--light); max-width: 620px; margin-bottom: 52px; }
 .intro-lists { display: grid; grid-template-columns: 1fr 1fr; gap: 64px; margin-bottom: 52px; }
+.intro-list-heading { font-weight: 700; font-size: 13px; letter-spacing: .18em; text-transform: uppercase; color: var(--gold); margin-bottom: 24px; }
 .intro-list { list-style: none; }
-.intro-item { display: flex; align-items: flex-start; gap: 14px; padding: 13px 0; border-bottom: 1px solid var(--border); font-size: 12px; letter-spacing: .08em; text-transform: uppercase; color: var(--light); }
+.intro-item { display: flex; align-items: flex-start; gap: 16px; padding: 15px 0; border-bottom: 1px solid var(--border); font-size: 13px; letter-spacing: .06em; text-transform: uppercase; color: var(--light); line-height: 1.5; }
 .intro-icon-apply { width: 8px; height: 8px; background: var(--gold); flex-shrink: 0; margin-top: 3px; }
 .intro-icon-skip { position: relative; width: 12px; height: 12px; flex-shrink: 0; margin-top: 1px; }
 .intro-icon-skip::before, .intro-icon-skip::after { content: ''; position: absolute; width: 100%; height: 1px; background: var(--mid); top: 50%; left: 0; }

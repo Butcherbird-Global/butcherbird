@@ -143,42 +143,42 @@ export default function HomePage() {
       {/* INTRO CALL */}
       <section className="section" style={{ background: '#fff' }} id="contact">
         <div className="container">
-          <p className="f-label" style={{ marginBottom: 14, color: 'rgba(0,0,0,0.4)' }}>Introductory Call · 20 Minutes</p>
           <h2 className="intro-title reveal" style={{ marginBottom: 48 }}>A conversation.<br />Not a pitch.</h2>
           <div className="intro-card reveal">
             <div className="intro-card-body">
-              <p className="f-body" style={{ maxWidth: 540, marginBottom: 48 }}>
-                20 minutes. We look at your brand, tell you what we see, and work out whether there&apos;s
-                a real fit. No deck. No pressure. If we&apos;re not the right team for you, we&apos;ll say so.
+              <p className="intro-body-lead reveal">
+                We set aside 20 minutes — no deck, no script. We&apos;ll look at your brand, ask the questions
+                that actually matter, and give you an honest read on where your real growth leverage is.
+                You&apos;ll leave with clarity on your account whether we end up working together or not.
               </p>
               <div className="intro-lists">
                 <div>
-                  <p className="f-gold" style={{ marginBottom: 20 }}>Apply if you</p>
+                  <p className="intro-list-heading reveal">You&apos;re a fit if</p>
                   <ul className="intro-list">
                     {[
-                      'Are spending $1,500+/month on paid media',
-                      'Have a product with proven demand',
-                      'Want operators with skin in the game',
-                      'Are ready to move fast and execute',
+                      { text: 'Spending $1,500+/month on paid media and want to push harder' },
+                      { text: 'Have a product people are already buying — and want to scale it' },
+                      { text: 'Want a team with genuine skin in the game, not account managers' },
+                      { text: 'Ready to move fast and execute without hand-holding' },
                     ].map((item, i) => (
-                      <li key={i} className="intro-item reveal" style={{ transitionDelay: `${i * 0.09}s` }}>
+                      <li key={i} className="intro-item reveal" style={{ transitionDelay: `${i * 0.1}s` }}>
                         <span className="intro-icon-apply" />
-                        {item}
+                        {item.text}
                       </li>
                     ))}
                   </ul>
                 </div>
                 <div>
-                  <p className="f-gold" style={{ marginBottom: 20 }}>Skip if you</p>
+                  <p className="intro-list-heading reveal">Probably not if</p>
                   <ul className="intro-list">
                     {[
-                      'Are in early testing with minimal spend',
-                      'Need sign-off on every decision',
-                      'Want a traditional agency relationship',
+                      { text: 'Still testing your product or haven\'t proven demand yet' },
+                      { text: 'Need weekly updates and approval on every decision' },
+                      { text: 'Looking for a traditional agency to manage things for you' },
                     ].map((item, i) => (
-                      <li key={i} className="intro-item reveal" style={{ transitionDelay: `${(i + 4) * 0.09}s` }}>
+                      <li key={i} className="intro-item reveal" style={{ transitionDelay: `${(i + 4) * 0.1}s` }}>
                         <span className="intro-icon-skip" />
-                        {item}
+                        {item.text}
                       </li>
                     ))}
                   </ul>
