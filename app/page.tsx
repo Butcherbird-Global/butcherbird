@@ -132,7 +132,7 @@ export default function HomePage() {
               </div>
             ))}
           </div>
-          <button className="testi-arrow-hint" style={{ opacity: testiProgress > 0.02 ? 0 : 1 }} onClick={() => testiRef.current?.scrollBy({ left: 460, behavior: 'smooth' })} aria-label="Scroll testimonials" />
+          <button className="testi-arrow-hint" style={{ opacity: testiProgress >= 0.99 ? 0 : 1 }} onClick={() => testiRef.current?.scrollBy({ left: 460, behavior: 'smooth' })} aria-label="Scroll testimonials" />
           </div>
           <div className="testi-scrollbar">
             <div className="testi-scrollbar-fill" style={{ width: `${testiProgress * 100}%` }} />
