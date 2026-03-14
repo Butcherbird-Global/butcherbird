@@ -48,35 +48,31 @@ export default function PartnerPage() {
           <div className="gold-rule reveal" />
           <h2 className="f-h1 reveal" style={{ marginBottom: 52 }}>Who we<br />partner with.</h2>
           <div className="partner-grid">
-            {[
+            [
               {
                 num: '01',
                 label: 'Venture Capital',
-                title: 'Portfolio brands that need a growth engine',
-                body: "You've invested in a consumer brand. The product is right, the market is there, but the growth infrastructure isn't. We've built that infrastructure and proved it on our own brands first. We become the operational growth engine for your portfolio company.",
-                tags: 'Full paid media + email · Creative production · Strategy · Operator accountability',
+                title: 'Fund the machine. Share the upside.',
+                body: "We build and scale consumer brands. If you're looking to co-fund our own projects or deploy capital into brands you've already backed — we are the operating team. We bring the system, the creative, the media buying, and the results.",
               },
               {
                 num: '02',
                 label: 'Entrepreneurs',
-                title: 'Capital and execution for brands ready to scale',
-                body: "You have a product that works and a market that wants it. You need capital and a team that knows how to deploy it. Butcherbird brings both — equity partnership structures where we invest our infrastructure and expertise in exchange for a meaningful stake in the outcome.",
-                tags: 'Media buying · Email system · Creative · Distribution strategy · C-suite involvement',
+                title: 'Great product. No founding team. We can be it.',
+                body: "You've built something people want. But scaling a DTC brand takes a full team — media buyers, creatives, email marketers, strategists. You don't need to hire all of that. We can be your founding growth team, with skin in the game.",
               },
               {
                 num: '03',
-                label: 'Operators & Talent',
-                title: 'Exceptional builders who want to move fast',
-                body: 'If you are a brand builder, media buyer, creative director, or growth operator who is exceptional at what you do — we want to hear from you. We are not a slow company. We are not a safe company. We are the fastest-moving growth agency in Africa and we hire accordingly.',
-                tags: 'Skin in the game · Cape Town base · International clients · Fast trajectory',
+                label: 'Talent',
+                title: 'Want to work for the best company in the game?',
+                body: "We're building the fastest-moving growth agency in Africa. If you are exceptional at what you do and want to be somewhere that matches your ambition — we want to hear from you.",
               },
             ].map((card) => (
               <div key={card.num} className="p-card reveal">
                 <div className="p-card-num">{card.num}</div>
                 <div className="f-gold" style={{ marginBottom: 14 }}>{card.label}</div>
                 <h3 className="f-h2" style={{ marginBottom: 14 }}>{card.title}</h3>
-                <p className="f-body" style={{ marginBottom: 24 }}>{card.body}</p>
-                <p className="f-label">{card.tags}</p>
+                <p className="f-body">{card.body}</p>
               </div>
             ))}
           </div>
