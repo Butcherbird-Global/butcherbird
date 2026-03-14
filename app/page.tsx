@@ -42,6 +42,19 @@ function CountUp({ to, decimals = 0 }: { to: number; decimals?: number }) {
 
 export default function HomePage() {
   const [activeModal, setActiveModal] = useState<CaseStudy | null>(null)
+  const testiRef = useRef<HTMLDivElement>(null)
+  const [testiProgress, setTestiProgress] = useState(0)
+
+  useEffect(() => {
+    const el = testiRef.current
+    if (!el) return
+    function onScroll() {
+      const max = el!.scrollWidth - el!.clientWidth
+      setTestiProgress(max > 0 ? el!.scrollLeft / max : 0)
+    }
+    el.addEventListener('scroll', onScroll, { passive: true })
+    return () => el.removeEventListener('scroll', onScroll)
+  }, [])
 
   return (
     <>
@@ -93,7 +106,7 @@ export default function HomePage() {
       <section className="section" style={{ background: 'var(--dark)' }}>
         <div className="container">
           <h2 className="f-h1 reveal" style={{ marginBottom: 0 }}>What our<br />clients say.</h2>
-          <div className="testi-grid">
+          <div className="testi-grid" ref={testiRef}>
             {[
               { brand: 'BUUB', person: 'Larneke Van Vyl', role: 'Brand Manager', location: 'Cape Town', oneliner: "100% organic, reef-safe SPF50 sunscreen — Original, Tinted, Kids, and Mini" },
               { brand: 'SCHNOZZ', person: 'Ilan Tait', role: 'Co-Founder', location: 'Johannesburg', oneliner: "Adhesive nasal strips that open airways for better breathing during sleep, sport, and everyday life" },
@@ -117,6 +130,9 @@ export default function HomePage() {
                 </div>
               </div>
             ))}
+          </div>
+          <div className="testi-scrollbar">
+            <div className="testi-scrollbar-fill" style={{ width: `${testiProgress * 100}%` }} />
           </div>
         </div>
       </section>

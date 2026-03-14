@@ -223,6 +223,8 @@ nav {
 .testi-oneliner { font-size: 11px; color: #666; line-height: 1.6; }
 .play-btn { width: 44px; height: 44px; border-radius: 50%; border: 1px solid var(--gold); display: flex; align-items: center; justify-content: center; }
 .play-btn::after { content: ''; border-left: 13px solid var(--gold); border-top: 7px solid transparent; border-bottom: 7px solid transparent; margin-left: 3px; }
+.testi-scrollbar { height: 2px; background: rgba(255,255,255,0.08); margin-top: 20px; }
+.testi-scrollbar-fill { height: 100%; background: var(--gold); transition: width .1s linear; }
 
 /* AUDIT BLOCK */
 .audit-block { padding: 80px 64px; background: var(--dark); border-left: 2px solid var(--gold); }
