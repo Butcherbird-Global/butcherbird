@@ -162,11 +162,7 @@ export default function HomePage() {
       <section className="vsl-section">
         <div className="container">
           <div className="vsl-inner reveal">
-            <p className="f-gold" style={{ marginBottom: 16 }}>Behind the numbers</p>
-            <h2 className="f-h1" style={{ marginBottom: 16 }}>90 seconds.<br />No pitch. Just proof.</h2>
-            <p className="f-body" style={{ maxWidth: 480, marginBottom: 48 }}>
-              Most agencies sell you a deck. We built a system. Watch it work.
-            </p>
+            <h2 className="f-h1" style={{ marginBottom: 48 }}>90 seconds.<br />Hear it from us.</h2>
             <div className="vsl-ph">
               <div className="vsl-play">
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><polygon points="5,3 19,12 5,21" /></svg>
