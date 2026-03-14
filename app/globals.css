@@ -357,6 +357,11 @@ nav {
 .port-hero::before { content: ''; position: absolute; inset: 0; background: radial-gradient(ellipse 50% 70% at 30% 60%, rgba(184,150,62,.06), transparent 65%); pointer-events: none; }
 .brand-sec { padding: 112px 0; }
 .brand-sec-light { background: #fff; }
+.brand-links { display: flex; gap: 20px; margin-top: 20px; flex-wrap: wrap; }
+.brand-link { display: flex; align-items: center; gap: 7px; font-size: 9px; letter-spacing: .14em; text-transform: uppercase; color: var(--mid); text-decoration: none; transition: color .2s; }
+.brand-link:hover { color: var(--gold); }
+.brand-links-light .brand-link { color: rgba(0,0,0,0.38); }
+.brand-links-light .brand-link:hover { color: var(--gold); }
 .brand-inner { display: grid; grid-template-columns: 1fr 1fr; gap: 88px; align-items: start; }
 .brand-flip { direction: rtl; }
 .brand-flip > * { direction: ltr; }
