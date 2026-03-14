@@ -48,7 +48,7 @@ export default function PartnerPage() {
           <div className="gold-rule reveal" />
           <h2 className="f-h1 reveal" style={{ marginBottom: 52 }}>Who we<br />partner with.</h2>
           <div className="partner-grid">
-            [
+            {[
               {
                 num: '01',
                 label: 'Venture Capital',
