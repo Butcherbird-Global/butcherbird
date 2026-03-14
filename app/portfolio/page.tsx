@@ -52,7 +52,7 @@ const schnozzTimeline = [
   },
   {
     date: 'Scale',
-    text: 'R4 million+ in revenue in the first three months. 8.20× ROAS in the strongest week. 2,133 purchases in a single month. The system at full speed.',
+    text: 'R500K+ in online revenue in month three from launch. 8.20× ROAS in the strongest week. 2,133 purchases in a single month. The system at full speed.',
   },
   {
     date: 'The Win',
@@ -157,7 +157,7 @@ export default function PortfolioPage() {
                 <div className="brand-float" style={{ right: 'auto', left: -24 }}><span className="f-label">[UGC still]</span></div>
               </div>
               <div className="kpis">
-                <div className="kpi"><div className="kpi-val">R4<span className="gold">M+</span></div><div className="kpi-lbl">First 3 months</div></div>
+                <div className="kpi"><div className="kpi-val">R500<span className="gold">K+</span></div><div className="kpi-lbl">Month 3 revenue</div></div>
                 <div className="kpi"><div className="kpi-val">8.20<span className="gold">×</span></div><div className="kpi-lbl">Peak ROAS</div></div>
                 <div className="kpi"><div className="kpi-val">20<span className="gold">K+</span></div><div className="kpi-lbl">Customers</div></div>
               </div>
