@@ -250,30 +250,30 @@ export default function PortfolioPage() {
         <div className="container" style={{ position: 'relative', zIndex: 1 }}>
           <div className="gold-rule reveal" />
           <p className="f-gold reveal" style={{ marginBottom: 20 }}>About Butcherbird</p>
-          <h2 className="f-h1 reveal" style={{ marginBottom: 32, maxWidth: 560 }}>Built because<br />we needed it.</h2>
+          <h2 className="f-h1 reveal" style={{ marginBottom: 32, maxWidth: 560 }}>The results spoke.<br />Brands followed.</h2>
           <p className="f-italic reveal" style={{ maxWidth: 580, marginBottom: 56, fontSize: 'clamp(17px, 2vw, 23px)', color: 'var(--light)', lineHeight: 1.65 }}>
-            "BUUB existed before Butcherbird did. Two agencies came and went — thousands spent, nothing to show. So we built the system ourselves, ran our own brand through it first, proved it worked, and opened it to the world."
+            "When the numbers started coming in — the ROAS, the retail doors, the revenue — other founders started asking who was behind it. That question became Butcherbird."
           </p>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(260px, 1fr))', gap: '40px 64px', maxWidth: 780, marginBottom: 64 }}>
             <div className="reveal">
-              <p className="f-gold" style={{ marginBottom: 10 }}>Why We Exist</p>
-              <p className="f-body" style={{ marginBottom: 0 }}>We built Butcherbird to solve a problem we had ourselves. Not as a pitch — as a necessity. The system has been running on our own brands since day one. What clients get is already proven.</p>
+              <p className="f-gold" style={{ marginBottom: 10 }}>How It Started</p>
+              <p className="f-body" style={{ marginBottom: 0 }}>The system worked. Brands in our portfolio were hitting numbers that other agencies couldn't explain. Word spread fast in founder circles — and the inbound started. We took on local brands first, learned what translated across categories, and built from there.</p>
             </div>
             <div className="reveal">
-              <p className="f-gold" style={{ marginBottom: 10 }}>What Makes Us Different</p>
-              <p className="f-body" style={{ marginBottom: 0 }}>We are operators, not just service providers. Every principle we sell has been tested on our own money first. When we say something works, we have the receipts — real numbers, real brands, real proof.</p>
+              <p className="f-gold" style={{ marginBottom: 10 }}>Going International</p>
+              <p className="f-body" style={{ marginBottom: 0 }}>South Africa proved the model. Then the enquiries started coming from Dubai, the UK, and beyond. Founders who wanted world-class execution at a fraction of what London or New York agencies charge. The SA cost base became the edge. It still is.</p>
             </div>
             <div className="reveal">
-              <p className="f-gold" style={{ marginBottom: 10 }}>Where We're Going</p>
-              <p className="f-body" style={{ marginBottom: 0 }}>BUUB, Schnozz, and Superior are the first three. More brands are in the pipeline — new categories, new markets, same system. The agency funds the expansion. The brands prove the model. Both compound.</p>
+              <p className="f-gold" style={{ marginBottom: 10 }}>Built In-House</p>
+              <p className="f-body" style={{ marginBottom: 0 }}>We don't brief out and hope for the best. Paid media, email, creative, video, photography, design, web — all done in one building, by one team, working on your brand every day. 18 people. No outsourcing. No middlemen.</p>
             </div>
             <div className="reveal">
-              <p className="f-gold" style={{ marginBottom: 10 }}>Why Now Is Early</p>
-              <p className="f-body" style={{ marginBottom: 0 }}>Seven months in. R10M+ generated. 50,000+ customers. 600+ retail doors. Three brands actively scaling into international markets. This is year one — and year one already looks like this.</p>
+              <p className="f-gold" style={{ marginBottom: 10 }}>Just Getting Started</p>
+              <p className="f-body" style={{ marginBottom: 0 }}>Seven months in. R10M+ generated. 50,000+ customers across brands. 600+ retail doors. A client roster spanning Cape Town to Dubai. The portfolio is growing, the team is growing, and the brands coming through the door are getting bigger.</p>
             </div>
           </div>
           <p className="f-italic reveal" style={{ fontSize: 'clamp(20px, 2.5vw, 30px)', color: 'var(--gold)', maxWidth: 620, marginBottom: 52, lineHeight: 1.5 }}>
-            The brands scaling today will be the first of many.
+            This is what year one looks like. We're just getting started.
           </p>
           <div className="reveal">
             <a className="btn btn-gold" href="https://calendly.com/g-butcherbird/butcherbird-introduction-w-gascoyne" target="_blank" rel="noopener noreferrer">Work With Us</a>
