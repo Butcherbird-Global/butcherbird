@@ -103,7 +103,7 @@ export default function PortfolioPage() {
       </section>
 
       {/* BUUB */}
-      <section className="brand-sec" style={{ background: 'var(--dark)' }}>
+      <section className="brand-sec brand-sec-light">
         <div className="container">
           <div className="brand-inner">
             <div className="brand-img-wrap reveal-l">
@@ -117,7 +117,7 @@ export default function PortfolioPage() {
                 <div className="kpi"><div className="kpi-val">7.37<span className="gold">×</span></div><div className="kpi-lbl">Best creative</div></div>
                 <div className="kpi"><div className="kpi-val">400<span className="gold">+</span></div><div className="kpi-lbl">Retail stores</div></div>
               </div>
-              <div className="brand-links">
+              <div className="brand-links brand-links-light">
                 <a href="https://buub.co.za" className="brand-link" target="_blank" rel="noopener noreferrer"><GlobeIcon /> buub.co.za</a>
                 <a href="https://www.instagram.com/buubsunscreen" className="brand-link" target="_blank" rel="noopener noreferrer"><InstaIcon /> @buubsunscreen</a>
               </div>
@@ -125,8 +125,8 @@ export default function PortfolioPage() {
             <div>
               <div className="gold-rule reveal" />
               <p className="f-gold reveal" style={{ marginBottom: 12 }}>01 — Skincare · buub.co.za</p>
-              <h2 className="f-h1 reveal" style={{ marginBottom: 18 }}>BUUB Sunscreen</h2>
-              <p className="f-body reveal" style={{ marginBottom: 32 }}>
+              <h2 className="f-h1 reveal" style={{ marginBottom: 18, color: 'var(--black)' }}>BUUB Sunscreen</h2>
+              <p className="f-body reveal" style={{ marginBottom: 32, color: 'rgba(0,0,0,0.6)' }}>
                 BUUB is our brand. It existed before Butcherbird did — and it was struggling. Two external agencies,
                 thousands spent, nothing to show. When we built the Butcherbird system, BUUB was the first brand
                 we ran it on. What happened next became the proof of concept for everything we do.
@@ -134,10 +134,10 @@ export default function PortfolioPage() {
               <div className="timeline reveal">
                 {buubTimeline.map((item) => (
                   <div key={item.date} className="tl-item">
-                    <div className="tl-dot"><div className="tl-dot-inner" /></div>
+                    <div className="tl-dot" style={{ background: '#fff' }}><div className="tl-dot-inner" /></div>
                     <div>
                       <div className="tl-date">{item.date}</div>
-                      <p className="tl-txt">{item.text}</p>
+                      <p className="tl-txt" style={{ color: 'rgba(0,0,0,0.6)' }}>{item.text}</p>
                     </div>
                   </div>
                 ))}
@@ -151,7 +151,7 @@ export default function PortfolioPage() {
       </section>
 
       {/* SCHNOZZ */}
-      <section className="brand-sec brand-sec-light">
+      <section className="brand-sec" style={{ background: 'var(--dark)' }}>
         <div className="container">
           <div className="brand-inner brand-flip">
             <div className="brand-img-wrap reveal">
@@ -164,7 +164,7 @@ export default function PortfolioPage() {
                 <div className="kpi"><div className="kpi-val">8.20<span className="gold">×</span></div><div className="kpi-lbl">Peak ROAS</div></div>
                 <div className="kpi"><div className="kpi-val">20<span className="gold">K+</span></div><div className="kpi-lbl">Customers</div></div>
               </div>
-              <div className="brand-links brand-links-light">
+              <div className="brand-links">
                 <a href="https://schnozzstrips.store" className="brand-link" target="_blank" rel="noopener noreferrer"><GlobeIcon /> schnozzstrips.store</a>
                 <a href="https://www.instagram.com/schnozzstrips" className="brand-link" target="_blank" rel="noopener noreferrer"><InstaIcon /> @schnozzstrips</a>
               </div>
@@ -172,8 +172,8 @@ export default function PortfolioPage() {
             <div>
               <div className="gold-rule reveal-l" />
               <p className="f-gold reveal-l" style={{ marginBottom: 12 }}>02 — Health & Wellness · schnozzstrips.store</p>
-              <h2 className="f-h1 reveal-l" style={{ marginBottom: 18, color: 'var(--black)' }}>Schnozz Strips</h2>
-              <p className="f-body reveal-l" style={{ marginBottom: 32, color: 'rgba(0,0,0,0.6)' }}>
+              <h2 className="f-h1 reveal-l" style={{ marginBottom: 18 }}>Schnozz Strips</h2>
+              <p className="f-body reveal-l" style={{ marginBottom: 32 }}>
                 Most brands launch with a landing page and a prayer. Schnozz launched with an army.
                 300 ambassadors and 2 million organic views before the first ad ran. By the time paid went live,
                 the market was already waiting.
@@ -181,10 +181,10 @@ export default function PortfolioPage() {
               <div className="timeline reveal-l">
                 {schnozzTimeline.map((item) => (
                   <div key={item.date} className="tl-item">
-                    <div className="tl-dot" style={{ background: '#fff' }}><div className="tl-dot-inner" /></div>
+                    <div className="tl-dot"><div className="tl-dot-inner" /></div>
                     <div>
                       <div className="tl-date">{item.date}</div>
-                      <p className="tl-txt" style={{ color: 'rgba(0,0,0,0.6)' }}>{item.text}</p>
+                      <p className="tl-txt">{item.text}</p>
                     </div>
                   </div>
                 ))}
@@ -198,7 +198,7 @@ export default function PortfolioPage() {
       </section>
 
       {/* SUPERIOR */}
-      <section className="brand-sec" style={{ background: 'var(--dark)' }}>
+      <section className="brand-sec brand-sec-light">
         <div className="container">
           <div className="brand-inner">
             <div className="brand-img-wrap reveal-l">
@@ -211,7 +211,7 @@ export default function PortfolioPage() {
                 <div className="kpi"><div className="kpi-val">3.18<span className="gold">×</span></div><div className="kpi-lbl">Agent ROAS</div></div>
                 <div className="kpi"><div className="kpi-val">8.28<span className="gold">×</span></div><div className="kpi-lbl">Best creative</div></div>
               </div>
-              <div className="brand-links">
+              <div className="brand-links brand-links-light">
                 <a href="https://superior.africa" className="brand-link" target="_blank" rel="noopener noreferrer"><GlobeIcon /> superior.africa</a>
                 <a href="https://www.instagram.com/superiorfragrances.official" className="brand-link" target="_blank" rel="noopener noreferrer"><InstaIcon /> @superiorfragrances.official</a>
               </div>
@@ -219,8 +219,8 @@ export default function PortfolioPage() {
             <div>
               <div className="gold-rule reveal" />
               <p className="f-gold reveal" style={{ marginBottom: 12 }}>03 — Fragrance · superior.africa</p>
-              <h2 className="f-h1 reveal" style={{ marginBottom: 18 }}>Superior Fragrances</h2>
-              <p className="f-body reveal" style={{ marginBottom: 32 }}>
+              <h2 className="f-h1 reveal" style={{ marginBottom: 18, color: 'var(--black)' }}>Superior Fragrances</h2>
+              <p className="f-body reveal" style={{ marginBottom: 32, color: 'rgba(0,0,0,0.6)' }}>
                 French oils. ISO 22716 certified. Buy for R35, sell for R70 — double your money per bottle.
                 Superior had a proven product and a ceiling on growth. We rebranded it, built two parallel
                 acquisition machines, and watched it scale past 100,000 units a month.
@@ -228,10 +228,10 @@ export default function PortfolioPage() {
               <div className="timeline reveal">
                 {superiorTimeline.map((item) => (
                   <div key={item.date} className="tl-item">
-                    <div className="tl-dot"><div className="tl-dot-inner" /></div>
+                    <div className="tl-dot" style={{ background: '#fff' }}><div className="tl-dot-inner" /></div>
                     <div>
                       <div className="tl-date">{item.date}</div>
-                      <p className="tl-txt">{item.text}</p>
+                      <p className="tl-txt" style={{ color: 'rgba(0,0,0,0.6)' }}>{item.text}</p>
                     </div>
                   </div>
                 ))}
