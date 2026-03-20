@@ -379,14 +379,19 @@ export default function HomePage() {
             <p className="f-gold" style={{ marginBottom: 28, letterSpacing: '0.2em' }}>Management</p>
             <div className="team-grid-mgmt">
               {[
-                { initials: 'GC', name: 'Gascoyne Clarke', role: 'CEO' },
-                { initials: 'RC', name: 'Richard Clarke', role: 'CFO' },
-                { initials: 'IT', name: 'Ilan Tait', role: 'Portfolio Manager' },
-                { initials: 'KM', name: 'Kathleen Murphy', role: 'Marketing Director' },
-                { initials: 'MC', name: 'Maximus Clarke', role: 'Warehouse & Logistics Manager' },
+                { initials: 'GC', name: 'Gascoyne Clarke', role: 'CEO', image: '/headshots/gascoyne.png' },
+                { initials: 'RC', name: 'Richard Clarke', role: 'CFO', image: '/headshots/richard.png' },
+                { initials: 'IT', name: 'Ilan Tait', role: 'Portfolio Manager', image: '/headshots/ilan.png' },
+                { initials: 'KM', name: 'Kathleen Murphy', role: 'Marketing Director', image: '/headshots/kathleen.png' },
+                { initials: 'MC', name: 'Maximus Clarke', role: 'Warehouse & Logistics Manager', image: '/headshots/maximus.png' },
               ].map((member) => (
                 <div key={member.name} className="team-card">
-                  <div className="team-img-ph"><div className="team-img-lbl">{member.initials}</div></div>
+                  <div className="team-img-ph">
+                    {member.image
+                      ? <Image src={member.image} alt={member.name} fill style={{ objectFit: 'cover', objectPosition: 'top' }} />
+                      : <div className="team-img-lbl">{member.initials}</div>
+                    }
+                  </div>
                   <div className="team-info">
                     <div className="team-name">{member.name}</div>
                     <div className="team-role">{member.role}</div>
@@ -400,21 +405,26 @@ export default function HomePage() {
             <p className="f-gold" style={{ marginBottom: 28, letterSpacing: '0.2em' }}>Team</p>
             <div className="team-grid-staff">
               {[
-                { initials: 'TB', name: 'Tian Bester', role: 'Paid Media Manager' },
+                { initials: 'TB', name: 'Tian Bester', role: 'Paid Media Manager', image: '/headshots/tian.png' },
                 { initials: 'CB', name: 'Claudia Barnard', role: 'Graphic Design' },
-                { initials: 'RT', name: 'Rhett Tomlinson', role: 'Graphic Design & Creative' },
-                { initials: 'KF', name: 'Kaylee Frankson', role: 'Email Marketing Manager' },
-                { initials: 'MS', name: 'Morgan Scott', role: 'Videographer & Video Editor' },
-                { initials: 'LN', name: 'Liam Nymphe', role: 'Videographer & Video Editor' },
-                { initials: 'LVZ', name: 'Larneke Van Zyl', role: 'Social Media Manager' },
-                { initials: 'JF', name: 'Jordyn Fester', role: 'Events Manager' },
-                { initials: 'AS', name: 'Aamir Sayed', role: 'IT & Technical Infrastructure' },
-                { initials: 'ZE', name: 'Zubayr Ederies', role: 'Graphic Design & Web Development' },
-                { initials: 'NC', name: 'Nikki Clarke', role: 'Administration & HR' },
+                { initials: 'RT', name: 'Rhett Tomlinson', role: 'Graphic Design & Creative', image: '/headshots/rhett.png' },
+                { initials: 'KF', name: 'Kaylee Frankson', role: 'Email Marketing Manager', image: '/headshots/kaylee.png' },
+                { initials: 'MS', name: 'Morgan Scott', role: 'Videographer & Video Editor', image: '/headshots/morgan.png' },
+                { initials: 'LN', name: 'Liam Nymphe', role: 'Videographer & Video Editor', image: '/headshots/liam.png' },
+                { initials: 'LVZ', name: 'Larneke Van Zyl', role: 'Social Media Manager', image: '/headshots/larneke.png' },
+                { initials: 'JF', name: 'Jordyn Fester', role: 'Events Manager', image: '/headshots/jordyn.png' },
+                { initials: 'AS', name: 'Aamir Sayed', role: 'IT & Technical Infrastructure', image: '/headshots/aamir.png' },
+                { initials: 'ZE', name: 'Zubayr Ederies', role: 'Graphic Design & Web Development', image: '/headshots/zubayr.png' },
+                { initials: 'NC', name: 'Nikki Clarke', role: 'Administration & HR', image: '/headshots/nikki.png' },
                 { initials: 'CT', name: 'Charmaine Trevisan', role: 'Accounts' },
               ].map((member) => (
                 <div key={member.name} className="team-card">
-                  <div className="team-img-ph"><div className="team-img-lbl">{member.initials}</div></div>
+                  <div className="team-img-ph">
+                    {member.image
+                      ? <Image src={member.image} alt={member.name} fill style={{ objectFit: 'cover', objectPosition: 'top' }} />
+                      : <div className="team-img-lbl">{member.initials}</div>
+                    }
+                  </div>
                   <div className="team-info">
                     <div className="team-name">{member.name}</div>
                     <div className="team-role">{member.role}</div>
