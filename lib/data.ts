@@ -22,6 +22,7 @@ export const caseStudies: CaseStudy[] = [
     brand: 'SUPERIOR',
     tag: 'Fragrance',
     category: 'internal',
+    image: '/case-studies/superior.png',
     subtitle: 'Agent network model — 100,000+ monthly units',
     desc: 'A fragrance brand that scales without ad spend — through an agent distribution model that now moves 100,000+ units monthly.',
     metrics: [
@@ -39,6 +40,7 @@ export const caseStudies: CaseStudy[] = [
     brand: 'HELPDESK',
     tag: 'Consumer Technology',
     category: 'client',
+    image: '/case-studies/helpdesk.png',
     subtitle: 'On-demand help platform — Gulf region launch',
     desc: "Nobody was searching for an on-demand helper app because nobody knew it existed. We built the category from scratch — 5,000+ installs across the Gulf in under 4 months.",
     metrics: [
@@ -55,6 +57,7 @@ export const caseStudies: CaseStudy[] = [
     brand: 'LAKRIDS',
     tag: 'Premium Confectionery',
     category: 'client',
+    image: '/case-studies/lakrids.png',
     subtitle: 'Zero ads to 120% year-on-year business growth',
     desc: "Zero paid ads to 120% year-on-year business growth. We built the entire online channel from nothing — including a 45.23× ROAS campaign they shut down at its peak.",
     metrics: [
@@ -72,6 +75,7 @@ export const caseStudies: CaseStudy[] = [
     brand: 'NUMUTI',
     tag: 'Functional Wellness',
     category: 'client',
+    image: '/case-studies/numuti.png',
     subtitle: 'From burned by agencies to their best month ever',
     desc: "Their previous agency ran ads. We actually learned the brand. Five months later: their best month ever — R108,000 — doubled from R48K.",
     metrics: [
@@ -89,6 +93,7 @@ export const caseStudies: CaseStudy[] = [
     brand: 'BONNIE BIO',
     tag: 'Sustainable Household',
     category: 'client',
+    image: '/case-studies/bonnie.png',
     subtitle: 'The online engine behind a retail brand',
     desc: "A retail brand people now actively look for on the shelf — because we put them in front of thousands of people online first.",
     metrics: [
@@ -105,6 +110,7 @@ export const caseStudies: CaseStudy[] = [
     brand: 'KOKEE',
     tag: 'Sports Nutrition',
     category: 'client',
+    image: '/case-studies/kokee.png',
     subtitle: 'Competitive market. Systematic approach. Building momentum.',
     desc: "South Africa's most competitive hydration category. A 27× ROAS on a single ad. 41% revenue growth in one month. The system working through a hard problem in real time.",
     metrics: [
@@ -121,6 +127,7 @@ export const caseStudies: CaseStudy[] = [
     brand: 'SHOOT STUDIOS',
     tag: 'Creative Studio',
     category: 'client',
+    image: '/case-studies/shootstudios.png',
     subtitle: 'From zero ads to their best month ever',
     desc: "R21,000 in studio bookings from R3,000 in spend. When they paused the ads over the holidays, enquiries stopped completely. The owner pushed to restart immediately.",
     metrics: [
@@ -137,6 +144,7 @@ export const caseStudies: CaseStudy[] = [
     brand: 'BUUB',
     tag: 'Organic Skincare',
     category: 'internal',
+    image: '/case-studies/buub.png',
     subtitle: 'Organic SPF50 — 10,000+ customers, 400+ retail stores',
     desc: 'Built from zero to 10,000+ customers and 400+ retail stores. An organic SPF50 brand that proved direct product messaging beats lifestyle content every single time.',
     metrics: [
@@ -154,6 +162,7 @@ export const caseStudies: CaseStudy[] = [
     brand: 'SCHNOZZ',
     tag: 'Health & Wellness',
     category: 'internal',
+    image: '/case-studies/schnozz.png',
     subtitle: 'Nasal strips to multi-product retail brand — 200+ doors',
     desc: '20,000+ customers, 200+ retail doors, multiple product extensions — built in under 8 months from a single SKU.',
     metrics: [
