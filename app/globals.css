@@ -331,7 +331,7 @@ nav {
 @media (max-width: 768px) { .stats2 { grid-template-columns: 1fr; } }
 
 /* TEAM */
-.team-grid-mgmt { display: grid; grid-template-columns: repeat(5, 1fr); gap: 2px; }
+.team-grid-mgmt { display: grid; grid-template-columns: repeat(4, 1fr); gap: 2px; }
 .team-grid-staff { display: grid; grid-template-columns: repeat(4, 1fr); gap: 2px; }
 .team-card { background: #f5f3ef; }
 .team-img-ph { width: 100%; aspect-ratio: 3/4; background: var(--black); display: flex; align-items: center; justify-content: center; position: relative; overflow: hidden; }
