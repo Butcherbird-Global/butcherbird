@@ -387,7 +387,7 @@ export default function HomePage() {
                 <div key={member.name} className="team-card">
                   <div className="team-img-ph">
                     {member.image
-                      ? <Image src={member.image} alt={member.name} fill style={{ objectFit: 'cover', objectPosition: 'top', ...member.imageStyle }} />
+                      ? <Image src={member.image} alt={member.name} fill style={{ objectFit: member.name === 'Aamir Sayed' ? 'contain' : 'cover', objectPosition: 'top' }} />
                       : <div className="team-img-lbl">{member.initials}</div>
                     }
                   </div>
@@ -411,14 +411,14 @@ export default function HomePage() {
                 { initials: 'LN', name: 'Liam Nymphe', role: 'Videographer & Video Editor', image: '/headshots/liam.png' },
                 { initials: 'LVZ', name: 'Larneke Van Zyl', role: 'Social Media Manager', image: '/headshots/larneke.png' },
                 { initials: 'JF', name: 'Jordyn Fester', role: 'Events Manager', image: '/headshots/jordyn.png' },
-                { initials: 'AS', name: 'Aamir Sayed', role: 'IT & Technical Infrastructure', image: '/headshots/aamir.png', imageStyle: { objectFit: 'contain' as const } },
+                { initials: 'AS', name: 'Aamir Sayed', role: 'IT & Technical Infrastructure', image: '/headshots/aamir.png' },
                 { initials: 'ZE', name: 'Zubayr Ederies', role: 'Graphic Design & Web Development', image: '/headshots/zubayr.png' },
                 { initials: 'NC', name: 'Nikki Clarke', role: 'Administration & HR', image: '/headshots/nikki.png' },
               ].map((member) => (
                 <div key={member.name} className="team-card">
                   <div className="team-img-ph">
                     {member.image
-                      ? <Image src={member.image} alt={member.name} fill style={{ objectFit: 'cover', objectPosition: 'top', ...member.imageStyle }} />
+                      ? <Image src={member.image} alt={member.name} fill style={{ objectFit: member.name === 'Aamir Sayed' ? 'contain' : 'cover', objectPosition: 'top' }} />
                       : <div className="team-img-lbl">{member.initials}</div>
                     }
                   </div>
