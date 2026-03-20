@@ -380,7 +380,6 @@ export default function HomePage() {
             <div className="team-grid-mgmt">
               {[
                 { initials: 'GC', name: 'Gascoyne Clarke', role: 'CEO', image: '/headshots/gascoyne.png' },
-                { initials: 'RC', name: 'Richard Clarke', role: 'CFO', image: '/headshots/richard.png' },
                 { initials: 'IT', name: 'Ilan Tait', role: 'Portfolio Manager', image: '/headshots/ilan.png' },
                 { initials: 'KM', name: 'Kathleen Murphy', role: 'Marketing Director', image: '/headshots/kathleen.png' },
                 { initials: 'MC', name: 'Maximus Clarke', role: 'Warehouse & Logistics Manager', image: '/headshots/maximus.png' },
@@ -388,7 +387,7 @@ export default function HomePage() {
                 <div key={member.name} className="team-card">
                   <div className="team-img-ph">
                     {member.image
-                      ? <Image src={member.image} alt={member.name} fill style={{ objectFit: 'cover', objectPosition: 'top' }} />
+                      ? <Image src={member.image} alt={member.name} fill style={{ objectFit: 'cover', objectPosition: 'top', ...member.imageStyle }} />
                       : <div className="team-img-lbl">{member.initials}</div>
                     }
                   </div>
@@ -406,22 +405,20 @@ export default function HomePage() {
             <div className="team-grid-staff">
               {[
                 { initials: 'TB', name: 'Tian Bester', role: 'Paid Media Manager', image: '/headshots/tian.png' },
-                { initials: 'CB', name: 'Claudia Barnard', role: 'Graphic Design' },
                 { initials: 'RT', name: 'Rhett Tomlinson', role: 'Graphic Design & Creative', image: '/headshots/rhett.png' },
                 { initials: 'KF', name: 'Kaylee Frankson', role: 'Email Marketing Manager', image: '/headshots/kaylee.png' },
                 { initials: 'MS', name: 'Morgan Scott', role: 'Videographer & Video Editor', image: '/headshots/morgan.png' },
                 { initials: 'LN', name: 'Liam Nymphe', role: 'Videographer & Video Editor', image: '/headshots/liam.png' },
                 { initials: 'LVZ', name: 'Larneke Van Zyl', role: 'Social Media Manager', image: '/headshots/larneke.png' },
                 { initials: 'JF', name: 'Jordyn Fester', role: 'Events Manager', image: '/headshots/jordyn.png' },
-                { initials: 'AS', name: 'Aamir Sayed', role: 'IT & Technical Infrastructure', image: '/headshots/aamir.png' },
+                { initials: 'AS', name: 'Aamir Sayed', role: 'IT & Technical Infrastructure', image: '/headshots/aamir.png', imageStyle: { objectFit: 'contain' as const } },
                 { initials: 'ZE', name: 'Zubayr Ederies', role: 'Graphic Design & Web Development', image: '/headshots/zubayr.png' },
                 { initials: 'NC', name: 'Nikki Clarke', role: 'Administration & HR', image: '/headshots/nikki.png' },
-                { initials: 'CT', name: 'Charmaine Trevisan', role: 'Accounts' },
               ].map((member) => (
                 <div key={member.name} className="team-card">
                   <div className="team-img-ph">
                     {member.image
-                      ? <Image src={member.image} alt={member.name} fill style={{ objectFit: 'cover', objectPosition: 'top' }} />
+                      ? <Image src={member.image} alt={member.name} fill style={{ objectFit: 'cover', objectPosition: 'top', ...member.imageStyle }} />
                       : <div className="team-img-lbl">{member.initials}</div>
                     }
                   </div>
