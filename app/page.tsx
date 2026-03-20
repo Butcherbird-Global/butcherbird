@@ -387,7 +387,7 @@ export default function HomePage() {
                 <div key={member.name} className="team-card">
                   <div className="team-img-ph">
                     {member.image
-                      ? <Image src={member.image} alt={member.name} fill style={{ objectFit: member.name === 'Aamir Sayed' ? 'contain' : 'cover', objectPosition: 'top' }} />
+                      ? <Image src={member.image} alt={member.name} fill style={{ objectFit: member.name === 'Aamir Sayed' ? 'contain' : 'cover', objectPosition: (member.name === 'Rhett Tomlinson' || member.name === 'Aamir Sayed') ? 'center' : 'top' }} />
                       : <div className="team-img-lbl">{member.initials}</div>
                     }
                   </div>
@@ -418,7 +418,7 @@ export default function HomePage() {
                 <div key={member.name} className="team-card">
                   <div className="team-img-ph">
                     {member.image
-                      ? <Image src={member.image} alt={member.name} fill style={{ objectFit: member.name === 'Aamir Sayed' ? 'contain' : 'cover', objectPosition: 'top' }} />
+                      ? <Image src={member.image} alt={member.name} fill style={{ objectFit: member.name === 'Aamir Sayed' ? 'contain' : 'cover', objectPosition: (member.name === 'Rhett Tomlinson' || member.name === 'Aamir Sayed') ? 'center' : 'top' }} />
                       : <div className="team-img-lbl">{member.initials}</div>
                     }
                   </div>
