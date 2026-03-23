@@ -146,7 +146,7 @@ export default function HomePage() {
           <div style={{ position: 'relative' }}>
           <div className="testi-grid" ref={testiRef}>
             {[
-              { brand: 'LAKRIDS', person: 'Catherine Bullough', role: 'SA Licence Owner', location: 'Cape Town', oneliner: "Gourmet Danish liquorice — plain and chocolate-coated, made in small batches by Lakrids by Bülow" },
+              { brand: 'LAKRIDS', person: 'Catherine Bullough', role: 'SA Licence Owner', location: 'Cape Town', oneliner: "Gourmet Danish liquorice — plain and chocolate-coated, made in small batches by Lakrids by Bülow", video: 'https://www.youtube.com/embed/i-nOjrkCqfY' },
               { brand: 'NUMUTI', person: 'Daniel Fine', role: 'Founder', location: 'Cape Town', oneliner: "Functional wellness drinks made with African botanicals and nootropics — Focus, Calm, and Mood blends" },
               { brand: 'BONNIE BIO', person: 'Frank McDouall', role: 'Owner', location: 'Johannesburg', oneliner: "Certified compostable, plant-based household products — bags, cling wrap, straws, and air fryer liners" },
               { brand: 'HELPDESK', person: 'Mohammed Al Sabbagh', role: 'Founder', location: 'Dubai', oneliner: "On-demand expert platform connecting users to real human specialists via audio, video, and screen share" },
