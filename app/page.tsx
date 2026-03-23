@@ -352,9 +352,6 @@ export default function HomePage() {
                 </div>
                 <p className="f-body" style={{ marginBottom: 0 }}>{s.desc}</p>
                 <div className="cs-row-actions">
-                  <button className="cs-btn-creative" onClick={() => { setActiveTab('creative'); setActiveModal(s) }}>
-                    View Creative Work
-                  </button>
                   <button className="cs-btn-story" onClick={() => { setActiveTab('story'); setActiveModal(s) }}>
                     The Story
                   </button>
