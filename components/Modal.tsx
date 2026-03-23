@@ -33,7 +33,21 @@ export default function Modal({ study, onClose, initialTab = 'story' }: ModalPro
         <div className="modal-header">
           <div>
             <p className="f-label" style={{ marginBottom: 6 }}>{study.tag}</p>
-            <h2 className="f-h2">{study.brand}</h2>
+            <h2 className="f-h2" style={{ marginBottom: study.website || study.instagram ? 10 : 0 }}>{study.brand}</h2>
+            {(study.website || study.instagram) && (
+              <div style={{ display: 'flex', gap: 16, flexWrap: 'wrap' }}>
+                {study.website && (
+                  <a href={study.website} target="_blank" rel="noopener noreferrer" style={{ fontSize: 11, color: 'var(--gold)', textDecoration: 'none', letterSpacing: '0.04em' }}>
+                    ↗ {study.website.replace('https://', '').replace('www.', '')}
+                  </a>
+                )}
+                {study.instagram && (
+                  <a href={`https://instagram.com/${study.instagram.replace('@', '')}`} target="_blank" rel="noopener noreferrer" style={{ fontSize: 11, color: 'var(--mid)', textDecoration: 'none', letterSpacing: '0.04em' }}>
+                    {study.instagram}
+                  </a>
+                )}
+              </div>
+            )}
           </div>
           <button className="modal-x" onClick={onClose}>&#x2715;</button>
         </div>
