@@ -42,7 +42,7 @@ function CountUp({ to, decimals = 0 }: { to: number; decimals?: number }) {
 
 export default function HomePage() {
   const [activeModal, setActiveModal] = useState<CaseStudy | null>(null)
-  const [activeTab, setActiveTab] = useState<'performance' | 'creative' | 'story'>('performance')
+  const [activeTab, setActiveTab] = useState<'creative' | 'story'>('story')
   const testiRef = useRef<HTMLDivElement>(null)
   const [testiProgress, setTestiProgress] = useState(0)
 
@@ -352,9 +352,6 @@ export default function HomePage() {
                 </div>
                 <p className="f-body" style={{ marginBottom: 0 }}>{s.desc}</p>
                 <div className="cs-row-actions">
-                  <button className="cs-btn-perf" onClick={() => { setActiveTab('performance'); setActiveModal(s) }}>
-                    View Performance
-                  </button>
                   <button className="cs-btn-creative" onClick={() => { setActiveTab('creative'); setActiveModal(s) }}>
                     View Creative Work
                   </button>
