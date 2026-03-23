@@ -208,8 +208,10 @@ export default function PortfolioPage() {
           <div className="brand-inner">
             <div className="brand-img-wrap reveal-l">
               <div className="brand-main-ph">
-                <div className="brand-main-lbl">SUPERIOR</div>
-                <div className="brand-float"><span className="f-label">[Product detail]</span></div>
+                <Image src="/portfolio/superior-1.png" alt="Superior Fragrances" fill style={{ objectFit: 'cover' }} />
+                <div className="brand-float">
+                  <Image src="/portfolio/superior-2.png" alt="Superior product detail" fill style={{ objectFit: 'cover' }} />
+                </div>
               </div>
               <div className="kpis">
                 <div className="kpi"><div className="kpi-val">100<span className="gold">K+</span></div><div className="kpi-lbl">Units / month</div></div>
