@@ -1,5 +1,6 @@
 'use client'
 
+import Image from 'next/image'
 import Footer from '@/components/Footer'
 import RevealOnScroll from '@/components/RevealOnScroll'
 
@@ -108,8 +109,10 @@ export default function PortfolioPage() {
           <div className="brand-inner">
             <div className="brand-img-wrap reveal-l">
               <div className="brand-main-ph">
-                <div className="brand-main-lbl">BUUB</div>
-                <div className="brand-float"><span className="f-label">[Product detail]</span></div>
+                <Image src="/portfolio/buub-1.jpg" alt="BUUB Sunscreen" fill style={{ objectFit: 'cover' }} />
+                <div className="brand-float">
+                  <Image src="/portfolio/buub-2.jpg" alt="BUUB product detail" fill style={{ objectFit: 'cover' }} />
+                </div>
               </div>
               <div className="kpis kpis-4">
                 <div className="kpi"><div className="kpi-val">6.82<span className="gold">×</span></div><div className="kpi-lbl">ROAS</div></div>
@@ -156,8 +159,10 @@ export default function PortfolioPage() {
           <div className="brand-inner brand-flip">
             <div className="brand-img-wrap reveal">
               <div className="brand-main-ph">
-                <div className="brand-main-lbl">SCHNOZZ</div>
-                <div className="brand-float" style={{ right: 'auto', left: -24 }}><span className="f-label">[UGC still]</span></div>
+                <Image src="/portfolio/schnozz-2.jpg" alt="Schnozz Strips" fill style={{ objectFit: 'cover' }} />
+                <div className="brand-float" style={{ right: 'auto', left: -24 }}>
+                  <Image src="/portfolio/schnozz-1.png" alt="Schnozz product" fill style={{ objectFit: 'cover' }} />
+                </div>
               </div>
               <div className="kpis">
                 <div className="kpi"><div className="kpi-val">R500<span className="gold">K+</span></div><div className="kpi-lbl">Month 3 revenue</div></div>
