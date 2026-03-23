@@ -53,9 +53,6 @@ export default function Modal({ study, onClose, initialTab = 'story' }: ModalPro
         </div>
 
         <div className="modal-tabs">
-          <button className={`modal-tab${tab === 'creative' ? ' active' : ''}`} onClick={() => setTab('creative')}>
-            Creative Work
-          </button>
           <button className={`modal-tab${tab === 'story' ? ' active' : ''}`} onClick={() => setTab('story')}>
             The Story
           </button>
