@@ -151,7 +151,7 @@ export default function HomePage() {
               { brand: 'BONNIE BIO', person: 'Frank McDouall', role: 'Owner', location: 'Johannesburg', oneliner: "Certified compostable, plant-based household products — bags, cling wrap, straws, and air fryer liners", video: 'https://www.youtube.com/embed/hFbq0B9_S3Q' },
               { brand: 'HELPDESK', person: 'Mohammed Al Sabbagh', role: 'Founder', location: 'Dubai', oneliner: "On-demand expert platform connecting users to real human specialists via audio, video, and screen share" },
               // { brand: 'SHOOT STUDIOS', person: 'Elad', role: 'Owner', location: 'Cape Town', oneliner: "Professional photography and creative studio rental space in Woodstock, Cape Town" },
-              { brand: 'BUUB', person: 'Larneke Van Vyl', role: 'Brand Manager', location: 'Cape Town', oneliner: "100% organic, reef-safe SPF50 sunscreen — Original, Tinted, Kids, and Mini" },
+              { brand: 'BUUB', person: 'Larneke Van Vyl', role: 'Brand Manager', location: 'Cape Town', oneliner: "100% organic, reef-safe SPF50 sunscreen — Original, Tinted, Kids, and Mini", video: 'https://www.youtube.com/embed/KZZ9XEoDLPE' },
               { brand: 'SCHNOZZ', person: 'Ilan Tait', role: 'Co-Founder', location: 'Johannesburg', oneliner: "Adhesive nasal strips that open airways for better breathing during sleep, sport, and everyday life", video: 'https://www.youtube.com/embed/sDSnriXD35s' },
             ].map((t) => (
               <div key={t.brand} className="testi-card reveal">
