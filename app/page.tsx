@@ -153,6 +153,7 @@ export default function HomePage() {
               // { brand: 'SHOOT STUDIOS', person: 'Elad', role: 'Owner', location: 'Cape Town', oneliner: "Professional photography and creative studio rental space in Woodstock, Cape Town" },
               { brand: 'BUUB', person: 'Larneke Van Vyl', role: 'Brand Manager', location: 'Cape Town', oneliner: "100% organic, reef-safe SPF50 sunscreen — Original, Tinted, Kids, and Mini", video: 'https://www.youtube.com/embed/KZZ9XEoDLPE' },
               { brand: 'SCHNOZZ', person: 'Ilan Tait', role: 'Co-Founder', location: 'Johannesburg', oneliner: "Adhesive nasal strips that open airways for better breathing during sleep, sport, and everyday life", video: 'https://www.youtube.com/embed/sDSnriXD35s' },
+              { brand: 'SUPERIOR', person: 'Maximus Clarke', role: 'Brand Manager', location: 'Cape Town', oneliner: "Designer-inspired fragrances made from premium French oils — sold through a growing network of agents across Southern Africa", video: 'https://www.youtube.com/embed/Dqvm1qaT-u8' },
             ].map((t) => (
               <div key={t.brand} className="testi-card reveal">
                 <div className="testi-video-ph">
@@ -379,7 +380,6 @@ export default function HomePage() {
                 { initials: 'GC', name: 'Gascoyne Clarke', role: 'CEO', image: '/headshots/gascoyne.png' },
                 { initials: 'IT', name: 'Ilan Tait', role: 'Portfolio Manager', image: '/headshots/ilan.png' },
                 { initials: 'KM', name: 'Kathleen Murphy', role: 'Marketing Director', image: '/headshots/kathleen.png' },
-                { initials: 'MC', name: 'Maximus Clarke', role: 'Warehouse & Logistics Manager', image: '/headshots/maximus.png' },
               ].map((member) => (
                 <div key={member.name} className="team-card">
                   <div className="team-img-ph">
@@ -406,7 +406,6 @@ export default function HomePage() {
                 { initials: 'KF', name: 'Kaylee Frankson', role: 'Email Marketing Manager', image: '/headshots/kaylee.png' },
                 { initials: 'MS', name: 'Morgan Scott', role: 'Videographer & Video Editor', image: '/headshots/morgan.png' },
                 { initials: 'LN', name: 'Liam Nymphe', role: 'Videographer & Video Editor', image: '/headshots/liam.png' },
-                { initials: 'LVZ', name: 'Larneke Van Zyl', role: 'Social Media Manager', image: '/headshots/larneke.png' },
                 { initials: 'JF', name: 'Jordyn Fester', role: 'Events Manager', image: '/headshots/jordyn.png' },
                 { initials: 'AS', name: 'Aamir Sayed', role: 'IT & Technical Infrastructure', image: '/headshots/aamir.png' },
                 { initials: 'ZE', name: 'Zubayr Ederies', role: 'Graphic Design & Web Development', image: '/headshots/zubayr.png' },
