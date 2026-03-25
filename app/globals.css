@@ -130,6 +130,7 @@ nav {
 .container { max-width: 1200px; margin: 0 auto; padding: 0 56px; }
 @media (max-width: 768px) { .container { padding: 0 24px; } }
 .section { padding: 112px 0; }
+@media (max-width: 768px) { .section { padding: 72px 0; } }
 .gold-rule { width: 40px; height: 1px; background: var(--gold); margin-bottom: 20px; }
 .gold-rule-c { width: 40px; height: 1px; background: var(--gold); margin: 0 auto 20px; }
 
@@ -200,16 +201,19 @@ nav {
   pointer-events: none;
   user-select: none;
 }
+@media (max-width: 768px) { .hero-ghost { display: none; } }
 
 /* SECTION NAV PILL */
 .sec-pill { position: fixed; bottom: 28px; left: 50%; transform: translateX(-50%); z-index: 300; display: flex; align-items: center; background: #fff; border-radius: 999px; padding: 8px 14px; gap: 4px; box-shadow: 0 4px 24px rgba(0,0,0,0.18); }
 .sec-pill-btn { background: none; border: none; cursor: pointer; color: var(--gold); display: flex; align-items: center; justify-content: center; padding: 4px 6px; transition: opacity .2s; border-radius: 999px; }
 .sec-pill-btn:disabled { opacity: 0.25; cursor: default; }
 .sec-pill-btn:not(:disabled):hover { opacity: 0.7; }
+@media (max-width: 768px) { .sec-pill { display: none; } }
 .sec-pill-divider { width: 1px; height: 14px; background: rgba(0,0,0,0.1); margin: 0 2px; }
 
 /* VSL */
 .vsl-section { background: var(--dark); padding: 0 0 112px; }
+@media (max-width: 768px) { .vsl-section { padding: 0 0 72px; } }
 .vsl-ph { width: 100%; aspect-ratio: 16/9; background: var(--black); border: 1px solid var(--border); display: flex; flex-direction: column; align-items: center; justify-content: center; position: relative; }
 .vsl-play { width: 64px; height: 64px; border-radius: 50%; border: 1px solid var(--gold); display: flex; align-items: center; justify-content: center; color: var(--gold); padding-left: 4px; }
 
@@ -389,6 +393,7 @@ nav {
 .tl-date { font-size: 9px; letter-spacing: .2em; text-transform: uppercase; color: var(--gold); margin-bottom: 5px; }
 .tl-txt { font-size: 14px; line-height: 1.75; color: var(--light); }
 @media (max-width: 900px) { .brand-inner { grid-template-columns: 1fr; gap: 44px; } .brand-flip { direction: ltr; } }
+@media (max-width: 768px) { .brand-sec { padding: 72px 0; } .port-hero { padding: 100px 0 56px; } .kpis { grid-template-columns: 1fr 1fr; } .kpis-4 { grid-template-columns: 1fr 1fr; } }
 
 /* PARTNER PAGE */
 .partner-hero { min-height: 90vh; display: flex; flex-direction: column; justify-content: center; padding: 140px 0 80px; position: relative; overflow: hidden; }
@@ -432,6 +437,7 @@ nav {
 .footer-insta-icon { color: rgba(0,0,0,0.4); transition: color .2s; display: flex; }
 .footer-insta-icon:hover { color: var(--gold); }
 @media (max-width: 768px) { .footer-cols { grid-template-columns: 1fr 1fr; } }
+@media (max-width: 480px) { .footer-cols { grid-template-columns: 1fr; } }
 
 /* NAV INSTAGRAM */
 .nav-insta { display: flex; align-items: center; color: var(--off-white); opacity: 0.6; transition: opacity .2s; padding: 0 4px; }
