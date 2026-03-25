@@ -186,7 +186,7 @@ export default function HomePage() {
           <div className="vsl-inner reveal">
             <h2 className="f-h1" style={{ marginBottom: 32 }}>90 seconds. Hear it from us.</h2>
             <div className="vsl-ph">
-              <iframe src="https://www.youtube.com/embed/dn_8pXs6psE" title="Butcherbird — Who We Are" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', border: 'none' }} />
+              <iframe src="https://www.youtube.com/embed/Ll0y23NKvhI" title="Butcherbird — Who We Are" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', border: 'none' }} />
             </div>
             <div style={{ marginTop: 32 }} className="reveal">
               <a className="btn btn-gold" href="https://calendly.com/g-butcherbird/butcherbird-introduction-w-gascoyne" target="_blank" rel="noopener noreferrer">Book a Call</a>
