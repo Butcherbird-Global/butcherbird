@@ -58,26 +58,24 @@ export default async function CaseStudyPage({ params }: { params: Promise<{ id: 
       {/* HERO */}
       <section className="cs-detail-hero">
         <div className="container">
-          <Link href="/#client-stories" className="cs-detail-back anim d1">
-            <span style={{ marginRight: 8 }}>{'\u2190'}</span> Back to Client Stories
-          </Link>
-          <div className="gold-rule anim d1" style={{ marginTop: 32 }} />
-          <p className="f-gold anim d1" style={{ marginBottom: 14 }}>{study.tag}{study.category === 'internal' ? ' — Portfolio Brand' : ' — Client'}</p>
-          <h1 className="f-display anim d2" style={{ marginBottom: 18, maxWidth: 800 }}>{study.brand}</h1>
-          <p className="f-italic anim d3" style={{ maxWidth: 560 }}>{study.subtitle}</p>
-        </div>
-      </section>
-
-      {/* COVER IMAGE */}
-      {study.image && (
-        <div className="cs-detail-img">
-          <div className="container">
-            <div className="cs-detail-img-wrap reveal">
-              <Image src={study.image} alt={study.brand} fill style={{ objectFit: 'cover' }} priority />
+          <div className="cs-detail-hero-inner">
+            <div className="cs-detail-hero-text">
+              <Link href="/#client-stories" className="cs-detail-back anim d1">
+                <span style={{ marginRight: 8 }}>{'\u2190'}</span> Back to Client Stories
+              </Link>
+              <div className="gold-rule anim d1" style={{ marginTop: 32 }} />
+              <p className="f-gold anim d1" style={{ marginBottom: 14 }}>{study.tag}{study.category === 'internal' ? ' — Portfolio Brand' : ' — Client'}</p>
+              <h1 className="f-display anim d2" style={{ marginBottom: 18 }}>{study.brand}</h1>
+              <p className="f-italic anim d3">{study.subtitle}</p>
             </div>
+            {study.image && (
+              <div className="cs-detail-hero-card anim d3">
+                <Image src={study.image} alt={study.brand} fill style={{ objectFit: 'cover' }} priority />
+              </div>
+            )}
           </div>
         </div>
-      )}
+      </section>
 
       {/* METRICS */}
       <section className="cs-detail-metrics">

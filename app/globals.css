@@ -300,7 +300,7 @@ nav {
 .cs-btn-creative:hover { background: var(--off-white); color: var(--black); border-color: var(--off-white); }
 .cs-btn-story { flex: 1; padding: 16px 20px; font-weight: 700; font-size: 9px; letter-spacing: .2em; text-transform: uppercase; background: transparent; color: var(--gold); border: 1px solid rgba(184,150,62,.35); cursor: pointer; font-family: inherit; transition: all .2s; }
 .cs-btn-story:hover { background: var(--gold); color: var(--black); border-color: var(--gold); }
-@media (max-width: 900px) { .cs-row { grid-template-columns: 1fr; } .cs-row-num { display: none; } .cs-row-img { min-height: 280px; } .cs-row-content { padding: 36px 28px; } }
+@media (max-width: 900px) { .cs-row { grid-template-columns: 1fr; } .cs-row-num { display: none; } .cs-row-img { min-height: auto; aspect-ratio: auto; } .cs-row-img img { position: relative !important; width: 100% !important; height: auto !important; } .cs-row-content { padding: 36px 28px; } }
 
 /* MODAL TABS */
 .modal-tabs { display: flex; border-bottom: 1px solid var(--border); margin-bottom: 32px; }
@@ -453,7 +453,7 @@ nav {
 /* CASE STUDY DETAIL PAGE */
 /* ====================== */
 .cs-detail-hero {
-  padding: 160px 0 64px;
+  padding: 160px 0 80px;
   position: relative;
   overflow: hidden;
 }
@@ -463,6 +463,19 @@ nav {
   inset: 0;
   background: radial-gradient(ellipse 60% 60% at 75% 35%, rgba(184,150,62,.07) 0%, transparent 70%);
   pointer-events: none;
+}
+.cs-detail-hero-inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 64px;
+  align-items: center;
+}
+.cs-detail-hero-text { position: relative; z-index: 1; }
+.cs-detail-hero-card {
+  position: relative;
+  aspect-ratio: 4/5;
+  overflow: hidden;
+  box-shadow: 0 24px 80px rgba(0,0,0,0.5);
 }
 .cs-detail-back {
   display: inline-flex;
@@ -475,13 +488,6 @@ nav {
   transition: color .2s;
 }
 .cs-detail-back:hover { color: var(--gold); }
-.cs-detail-img { background: var(--black); }
-.cs-detail-img-wrap {
-  position: relative;
-  width: 100%;
-  aspect-ratio: 21/9;
-  overflow: hidden;
-}
 .cs-detail-metrics {
   padding: 48px 0;
   background: #fff;
@@ -542,9 +548,10 @@ nav {
   transition: opacity .2s;
 }
 .cs-detail-link:hover { opacity: 0.7; }
-@media (max-width: 768px) {
+@media (max-width: 900px) {
   .cs-detail-hero { padding: 120px 0 48px; }
-  .cs-detail-img-wrap { aspect-ratio: 16/9; }
+  .cs-detail-hero-inner { grid-template-columns: 1fr; gap: 40px; }
+  .cs-detail-hero-card { aspect-ratio: 16/9; }
   .cs-detail-metrics-grid { gap: 32px; }
   .cs-detail-pullquote { font-size: clamp(18px, 5vw, 24px); padding-left: 20px; margin: 28px 0; }
 }
