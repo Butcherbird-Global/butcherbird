@@ -38,26 +38,26 @@ export default function Footer() {
               <li><Link href="/partner">Partner</Link></li>
             </ul>
           </div>
-          <div className="footer-col">
+          <div className="footer-col footer-col-hidden" aria-hidden="true">
             <p className="footer-col-hd">Services</p>
             <ul>
-              <li><Link href="/services/paid-media">Paid Media</Link></li>
-              <li><Link href="/services/email-marketing">Email Marketing</Link></li>
-              <li><Link href="/services/growth-strategy">Growth Strategy</Link></li>
-              <li><Link href="/services/creative">Creative Production</Link></li>
-              <li><Link href="/services/brand-web">Brand & Web</Link></li>
-              <li><Link href="/services/ai-automation">AI & Automation</Link></li>
+              <li><Link href="/services/paid-media" tabIndex={-1}>Paid Media</Link></li>
+              <li><Link href="/services/email-marketing" tabIndex={-1}>Email Marketing</Link></li>
+              <li><Link href="/services/growth-strategy" tabIndex={-1}>Growth Strategy</Link></li>
+              <li><Link href="/services/creative" tabIndex={-1}>Creative Production</Link></li>
+              <li><Link href="/services/brand-web" tabIndex={-1}>Brand & Web</Link></li>
+              <li><Link href="/services/ai-automation" tabIndex={-1}>AI & Automation</Link></li>
             </ul>
           </div>
-          <div className="footer-col">
+          <div className="footer-col footer-col-hidden" aria-hidden="true">
             <p className="footer-col-hd">Work</p>
             <ul>
-              <li><Link href="/work/buub">BUUB</Link></li>
-              <li><Link href="/work/schnozz">Schnozz</Link></li>
-              <li><Link href="/work/superior">Superior</Link></li>
-              <li><Link href="/work/lakrids">Lakrids</Link></li>
-              <li><Link href="/work/numuti">Numuti</Link></li>
-              <li><Link href="/work/kokee">Kokee</Link></li>
+              <li><Link href="/work/buub" tabIndex={-1}>BUUB</Link></li>
+              <li><Link href="/work/schnozz" tabIndex={-1}>Schnozz</Link></li>
+              <li><Link href="/work/superior" tabIndex={-1}>Superior</Link></li>
+              <li><Link href="/work/lakrids" tabIndex={-1}>Lakrids</Link></li>
+              <li><Link href="/work/numuti" tabIndex={-1}>Numuti</Link></li>
+              <li><Link href="/work/kokee" tabIndex={-1}>Kokee</Link></li>
             </ul>
           </div>
           <div className="footer-col">

@@ -426,7 +426,7 @@ nav {
 /* FOOTER */
 .footer { background: #fff; padding: 72px 0 40px; border-top: 1px solid rgba(0,0,0,0.08); }
 .footer-logo { margin-bottom: 52px; }
-.footer-cols { display: grid; grid-template-columns: repeat(4, 1fr); gap: 40px; margin-bottom: 52px; }
+.footer-cols { display: grid; grid-template-columns: repeat(2, 1fr); gap: 40px; margin-bottom: 52px; }
 .footer-col ul { list-style: none; display: flex; flex-direction: column; gap: 10px; }
 .footer-col-hd { font-size: 9px; letter-spacing: .22em; text-transform: uppercase; color: rgba(0,0,0,0.35); margin-bottom: 16px; }
 .footer-col a { font-size: 11px; letter-spacing: .06em; text-transform: uppercase; color: rgba(0,0,0,0.65); text-decoration: none; transition: color .2s; font-weight: 600; }
@@ -436,6 +436,7 @@ nav {
 .footer-bottom .f-label { color: rgba(0,0,0,0.35); }
 .footer-insta-icon { color: rgba(0,0,0,0.4); transition: color .2s; display: flex; }
 .footer-insta-icon:hover { color: var(--gold); }
+.footer-col-hidden { height: 0; overflow: hidden; opacity: 0; pointer-events: none; position: absolute; }
 @media (max-width: 900px) { .footer-cols { grid-template-columns: 1fr 1fr; } }
 @media (max-width: 480px) { .footer-cols { grid-template-columns: 1fr; } }
 
