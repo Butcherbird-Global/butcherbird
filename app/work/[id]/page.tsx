@@ -59,7 +59,7 @@ export default async function CaseStudyPage({ params }: { params: Promise<{ id: 
       <section className="cs-detail-hero">
         <div className="container">
           <Link href="/#client-stories" className="cs-detail-back anim d1">
-            <span style={{ marginRight: 8 }}>&larr;</span> Back to Client Stories
+            <span style={{ marginRight: 8 }}>{'\u2190'}</span> Back to Client Stories
           </Link>
           <div className="gold-rule anim d1" style={{ marginTop: 32 }} />
           <p className="f-gold anim d1" style={{ marginBottom: 14 }}>{study.tag}{study.category === 'internal' ? ' — Portfolio Brand' : ' — Client'}</p>
@@ -117,7 +117,7 @@ export default async function CaseStudyPage({ params }: { params: Promise<{ id: 
             <div className="cs-detail-links reveal">
               {study.website && (
                 <a href={study.website} target="_blank" rel="noopener noreferrer" className="cs-detail-link">
-                  <span style={{ marginRight: 6 }}>&nearr;</span>
+                  <span style={{ marginRight: 6 }}>{'\u2197'}</span>
                   {study.website.replace('https://', '').replace('www.', '')}
                 </a>
               )}

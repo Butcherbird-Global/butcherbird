@@ -64,7 +64,7 @@ export default async function ServicePage({ params }: { params: Promise<{ slug: 
       <section className="svc-hero">
         <div className="container">
           <Link href="/#what-we-do" className="cs-detail-back anim d1">
-            <span style={{ marginRight: 8 }}>&larr;</span> All Services
+            <span style={{ marginRight: 8 }}>{'\u2190'}</span> All Services
           </Link>
           <div className="gold-rule anim d1" style={{ marginTop: 32 }} />
           <p className="f-gold anim d1" style={{ marginBottom: 14 }}>Service {svc.num}</p>
