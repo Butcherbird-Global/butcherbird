@@ -10,7 +10,6 @@ import FAQ from '@/components/FAQ'
 import { caseStudies, CaseStudy } from '@/lib/data'
 
 const faqItems = [
-  { q: 'How much does it cost to work with Butcherbird?', a: 'Core retainers start from R50,000/month ($3,000). Includes full-stack paid media, creative production, and strategy. Performance fee of 10% on revenue above your 3-month average \u2014 we only earn more when you do.' },
   { q: 'What ROAS should I expect from Meta ads?', a: 'Depends on your category, price point, and creative. Across our portfolio, blended ROAS averages 4.6\u00d7. Individual campaigns have hit 11.47\u00d7 (Lakrids), 8.20\u00d7 (Schnozz), and 9.15\u00d7 (Numuti). We don\u2019t promise numbers \u2014 we show you ours.' },
   { q: 'How long until I see results from paid media?', a: 'Most brands see meaningful data within 2\u20134 weeks of launch. Consistent, scalable performance typically stabilises within 60\u201390 days. We don\u2019t optimise for vanity metrics \u2014 we optimise for purchases.' },
   { q: 'What\u2019s the difference between a media buyer and a growth agency?', a: 'A media buyer runs your ads. A growth agency builds the system \u2014 creative strategy, campaign architecture, email infrastructure, performance analysis, and strategic direction. We don\u2019t just execute; we think.' },
