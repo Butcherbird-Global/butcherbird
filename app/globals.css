@@ -473,7 +473,7 @@ nav {
 .cs-detail-hero-text { position: relative; z-index: 1; }
 .cs-detail-hero-card {
   position: relative;
-  aspect-ratio: 4/5;
+  aspect-ratio: 1/1;
   overflow: hidden;
   box-shadow: 0 24px 80px rgba(0,0,0,0.5);
 }
