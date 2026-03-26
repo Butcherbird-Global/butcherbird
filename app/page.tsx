@@ -6,7 +6,31 @@ import Image from 'next/image'
 import Footer from '@/components/Footer'
 import Modal from '@/components/Modal'
 import RevealOnScroll from '@/components/RevealOnScroll'
+import FAQ from '@/components/FAQ'
 import { caseStudies, CaseStudy } from '@/lib/data'
+
+const faqItems = [
+  { q: 'How much does it cost to work with Butcherbird?', a: 'Core retainers start from R50,000/month ($3,000). Includes full-stack paid media, creative production, and strategy. Performance fee of 10% on revenue above your 3-month average \u2014 we only earn more when you do.' },
+  { q: 'What ROAS should I expect from Meta ads?', a: 'Depends on your category, price point, and creative. Across our portfolio, blended ROAS averages 4.6\u00d7. Individual campaigns have hit 11.47\u00d7 (Lakrids), 8.20\u00d7 (Schnozz), and 9.15\u00d7 (Numuti). We don\u2019t promise numbers \u2014 we show you ours.' },
+  { q: 'How long until I see results from paid media?', a: 'Most brands see meaningful data within 2\u20134 weeks of launch. Consistent, scalable performance typically stabilises within 60\u201390 days. We don\u2019t optimise for vanity metrics \u2014 we optimise for purchases.' },
+  { q: 'What\u2019s the difference between a media buyer and a growth agency?', a: 'A media buyer runs your ads. A growth agency builds the system \u2014 creative strategy, campaign architecture, email infrastructure, performance analysis, and strategic direction. We don\u2019t just execute; we think.' },
+  { q: 'Do I need a minimum ad spend to work with you?', a: 'Yes. Minimum active media spend is $3,000/month (R50,000/month). Below that, the data signal is too weak to optimise meaningfully, and neither of us gets a return on the relationship.' },
+  { q: 'Should I use Meta ads or Google ads?', a: 'For most consumer brands, Meta first. It\u2019s where you build demand, not just capture it. Google captures people already searching \u2014 Meta puts you in front of people who didn\u2019t know they needed you. We run both when it makes sense.' },
+  { q: 'Can a South African agency manage international ad accounts?', a: 'Yes. We manage accounts across South Africa, the UAE, and beyond. Our Cape Town cost base means you get world-class execution at a fraction of what London or New York agencies charge. The platform is the same everywhere \u2014 the talent is what differs.' },
+  { q: 'What industries do you work with?', a: 'Consumer brands \u2014 skincare, health and wellness, food and beverage, fragrance, home goods, technology platforms. If you sell a product to real people and want to grow online, we\u2019re built for that.' },
+  { q: 'Do you build websites and Shopify stores?', a: 'Yes. Custom Shopify themes, full brand identity builds, landing pages, and email infrastructure. We\u2019ve built brands from scratch \u2014 BUUB, Schnozz, Superior \u2014 including the sites they sell on.' },
+  { q: 'What makes Butcherbird different from other agencies?', a: 'We run our own brands on the same system. When we say something works, we\u2019ve proven it with our own money first. R10M+ in revenue generated. 50K+ customers acquired. 600+ retail doors opened. Every number on this site is real.' },
+]
+
+const faqJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: faqItems.map((item) => ({
+    '@type': 'Question',
+    name: item.q,
+    acceptedAnswer: { '@type': 'Answer', text: item.a },
+  })),
+}
 
 const homeStudies = caseStudies
 
@@ -69,7 +93,7 @@ export default function HomePage() {
     return () => el.removeEventListener('scroll', onScroll)
   }, [])
 
-  const SECTIONS = ['hero','testimonials','vsl','contact','what-we-do','client-stories','team','contact-form']
+  const SECTIONS = ['hero','testimonials','vsl','contact','what-we-do','client-stories','faq','team','contact-form']
   const [activeSection, setActiveSection] = useState(0)
   useEffect(() => {
     function onScroll() {
@@ -95,6 +119,7 @@ export default function HomePage() {
   return (
     <>
       <RevealOnScroll />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
 
       {/* HERO */}
       <section className="hero" id="hero">
@@ -350,8 +375,11 @@ export default function HomePage() {
                 </div>
                 <p className="f-body" style={{ marginBottom: 0 }}>{s.desc}</p>
                 <div className="cs-row-actions">
+                  <Link href={`/work/${s.id}`} className="cs-btn-page">
+                    Full Case Study
+                  </Link>
                   <button className="cs-btn-story" onClick={() => { setActiveTab('story'); setActiveModal(s) }}>
-                    The Story
+                    Quick Read
                   </button>
                 </div>
               </div>
@@ -360,6 +388,18 @@ export default function HomePage() {
         </div>
         <div className="container" style={{ paddingTop: 52 }}>
           <a className="btn btn-gold reveal" href="https://calendly.com/g-butcherbird/butcherbird-introduction-w-gascoyne" target="_blank" rel="noopener noreferrer">Book a Call</a>
+        </div>
+      </section>
+
+      {/* FAQ */}
+      <section className="section" id="faq">
+        <div className="container">
+          <div className="gold-rule reveal" />
+          <h2 className="f-h1 reveal" style={{ marginBottom: 16 }}>Frequently Asked<br />Questions</h2>
+          <p className="f-body reveal" style={{ maxWidth: 480, marginBottom: 48, color: 'var(--mid)' }}>Straight answers. No fluff.</p>
+          <div className="reveal">
+            <FAQ items={faqItems} />
+          </div>
         </div>
       </section>
 

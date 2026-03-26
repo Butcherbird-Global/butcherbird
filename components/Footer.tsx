@@ -31,21 +31,33 @@ export default function Footer() {
 
         <div className="footer-cols">
           <div className="footer-col">
-            <p className="footer-col-hd">This page</p>
-            <ul>
-              <li><a href="#hero">Agency</a></li>
-              <li><a href="#what-we-do">What We Do</a></li>
-              <li><a href="#client-stories">Client Stories</a></li>
-              <li><a href="#team">The Team</a></li>
-              <li><a href="#contact-form">Get in Touch</a></li>
-            </ul>
-          </div>
-          <div className="footer-col">
             <p className="footer-col-hd">Pages</p>
             <ul>
               <li><Link href="/">Agency</Link></li>
               <li><Link href="/portfolio">Portfolio</Link></li>
               <li><Link href="/partner">Partner</Link></li>
+            </ul>
+          </div>
+          <div className="footer-col">
+            <p className="footer-col-hd">Services</p>
+            <ul>
+              <li><Link href="/services/paid-media">Paid Media</Link></li>
+              <li><Link href="/services/email-marketing">Email Marketing</Link></li>
+              <li><Link href="/services/growth-strategy">Growth Strategy</Link></li>
+              <li><Link href="/services/creative">Creative Production</Link></li>
+              <li><Link href="/services/brand-web">Brand & Web</Link></li>
+              <li><Link href="/services/ai-automation">AI & Automation</Link></li>
+            </ul>
+          </div>
+          <div className="footer-col">
+            <p className="footer-col-hd">Work</p>
+            <ul>
+              <li><Link href="/work/buub">BUUB</Link></li>
+              <li><Link href="/work/schnozz">Schnozz</Link></li>
+              <li><Link href="/work/superior">Superior</Link></li>
+              <li><Link href="/work/lakrids">Lakrids</Link></li>
+              <li><Link href="/work/numuti">Numuti</Link></li>
+              <li><Link href="/work/kokee">Kokee</Link></li>
             </ul>
           </div>
           <div className="footer-col">
