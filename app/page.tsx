@@ -418,6 +418,7 @@ export default function HomePage() {
                 { initials: 'GC', name: 'Gascoyne Clarke', role: 'CEO', image: '/headshots/gascoyne.png' },
                 { initials: 'IT', name: 'Ilan Tait', role: 'Portfolio Manager', image: '/headshots/ilan.png' },
                 { initials: 'KM', name: 'Kathleen Murphy', role: 'Marketing Director', image: '/headshots/kathleen.png' },
+                { initials: 'MC', name: 'Maximus Clarke', role: 'Operations Manager', image: '/headshots/maximus.png' },
               ].map((member) => (
                 <div key={member.name} className="team-card">
                   <div className="team-img-ph">
@@ -449,7 +450,6 @@ export default function HomePage() {
                 { initials: 'ZE', name: 'Zubayr Ederies', role: 'Graphic Design & Web Development', image: '/headshots/zubayr.png' },
                 { initials: 'NC', name: 'Nikki Clarke', role: 'Administration & HR', image: '/headshots/nikki.png' },
                 { initials: 'LV', name: 'Larneke Van Vyl', role: 'Brand Manager', image: '/headshots/larneke.png' },
-                { initials: 'MC', name: 'Maximus Clarke', role: 'Warehouse Manager', image: '/headshots/maximus.png' },
               ].map((member) => (
                 <div key={member.name} className="team-card">
                   <div className="team-img-ph">
