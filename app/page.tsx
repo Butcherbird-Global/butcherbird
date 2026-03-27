@@ -123,9 +123,10 @@ export default function HomePage() {
       {/* HERO */}
       <section className="hero" id="hero">
         <div className="container">
-          <div style={{ display: 'flex', alignItems: 'center', gap: 14, marginBottom: 26 }} className="anim d1">
+          <div style={{ display: 'flex', alignItems: 'center', gap: 14, marginBottom: 26, flexWrap: 'wrap' }} className="anim d1">
             <div style={{ width: 28, height: 1, background: 'var(--gold)' }} />
             <span className="f-label">Cape Town · Global · Est. 2025</span>
+            <span className="f-label" style={{ display: 'inline-flex', alignItems: 'center', gap: 6 }}>· As seen in <img src="/forbes-logo.svg" alt="Forbes" style={{ height: 11, display: 'inline-block', verticalAlign: 'middle' }} /> Africa Iss. Nov &apos;25</span>
           </div>
           <h1 className="hero-hl anim d2">
             We generated<br />
