@@ -448,6 +448,8 @@ export default function HomePage() {
                 { initials: 'AS', name: 'Aamir Sayed', role: 'IT & Technical Infrastructure', image: '/headshots/aamir.png' },
                 { initials: 'ZE', name: 'Zubayr Ederies', role: 'Graphic Design & Web Development', image: '/headshots/zubayr.png' },
                 { initials: 'NC', name: 'Nikki Clarke', role: 'Administration & HR', image: '/headshots/nikki.png' },
+                { initials: 'LV', name: 'Larneke Van Vyl', role: 'Brand Manager', image: '/headshots/larneke.png' },
+                { initials: 'MC', name: 'Maximus Clarke', role: 'Warehouse Manager', image: '/headshots/maximus.png' },
               ].map((member) => (
                 <div key={member.name} className="team-card">
                   <div className="team-img-ph">
