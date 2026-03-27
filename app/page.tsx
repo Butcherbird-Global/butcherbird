@@ -125,7 +125,7 @@ export default function HomePage() {
         <div className="container">
           <div style={{ display: 'flex', alignItems: 'center', gap: 14, marginBottom: 26, flexWrap: 'wrap' }} className="anim d1">
             <div style={{ width: 28, height: 1, background: 'var(--gold)' }} />
-            <span className="f-label">Cape Town · Global · Est. 2025 ·</span>
+            <span className="f-label">Cape Town · Global · Est. 2025</span>
             <span className="f-label" style={{ color: 'var(--gold)' }}>As seen in <img src="/forbes-logo.svg" alt="Forbes" style={{ height: 11, display: 'inline', verticalAlign: 'middle', position: 'relative', top: -1 }} /> Africa Iss. Nov &apos;25</span>
           </div>
           <h1 className="hero-hl anim d2">
