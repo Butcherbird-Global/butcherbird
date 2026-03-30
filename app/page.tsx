@@ -416,8 +416,8 @@ export default function HomePage() {
             <div className="team-grid-mgmt">
               {[
                 { initials: 'GC', name: 'Gascoyne Clarke', role: 'CEO', image: '/headshots/gascoyne.png' },
-                { initials: 'IT', name: 'Ilan Tait', role: 'Portfolio Manager', image: '/headshots/ilan.png' },
-                { initials: 'KM', name: 'Kathleen Murphy', role: 'Marketing Director', image: '/headshots/kathleen.png' },
+                { initials: 'IT', name: 'Ilan Tait', role: 'COO', image: '/headshots/ilan.png' },
+                { initials: 'KM', name: 'Kathleen Murphy', role: 'CMO', image: '/headshots/kathleen.png' },
                 { initials: 'MC', name: 'Maximus Clarke', role: 'Operations Manager', image: '/headshots/maximus.png' },
               ].map((member) => (
                 <div key={member.name} className="team-card">
