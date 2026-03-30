@@ -418,7 +418,7 @@ export default function HomePage() {
                 { initials: 'GC', name: 'Gascoyne Clarke', role: 'CEO', image: '/headshots/gascoyne.png' },
                 { initials: 'IT', name: 'Ilan Tait', role: 'COO', image: '/headshots/ilan.png' },
                 { initials: 'KM', name: 'Kathleen Murphy', role: 'CMO', image: '/headshots/kathleen.png' },
-                { initials: 'MC', name: 'Maximus Clarke', role: 'Operations Manager', image: '/headshots/maximus.png' },
+                { initials: 'MC', name: 'Maximus Clarke', role: 'Warehousing & Logistics Manager', image: '/headshots/maximus.png' },
               ].map((member) => (
                 <div key={member.name} className="team-card">
                   <div className="team-img-ph">
